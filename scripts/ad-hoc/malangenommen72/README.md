@@ -1,8 +1,18 @@
-# malangenommen72 – Video-Studio (TikTok)
+# AI72 (ehem. malangenommen72) – Video-Studio (TikTok)
 
 Produktionspaket für den TikTok-Kanal **@malangenommen72** (Psychologie, Wissen, „Wusstest du?“).
 Nicht Teil von OmniRoute – reines Ad-hoc-Werkzeug. Freigegeben vom Kanal-Betreiber: Videos #03 und #04
 sind die **Referenz-Qualität** für alle künftigen Videos.
+
+## Kanalname – AB JETZT: **AI72**
+
+Seit 2026-11-01: Der Wissens-Kanal heißt **AI72** (statt „malangenommen72“).
+- Follow-Aufruf: „Folge AI72 …“ (Sprechtext: „Folge A I zweiundsiebzig …“). Genaues TikTok-Handle beim
+  Betreiber bestätigen; Engine-Default `HANDLE=@ai72`, in Follow-Szenen `HANDLE` statt festem Text nutzen.
+- Stempel: „AI72 #NN“ (Engine-Default `CHANNEL=AI72`), Nummerierung läuft weiter ab #05.
+- Hashtag `#ai72` statt `#malangenommen72`.
+- Profilbilder: `branding/AI72_Profil_StilA_Lineart.png` (Stil A) und `branding/AI72_Profil_StilB_Flat.png`
+  (Stil B), erzeugt mit `branding/make_avatars.py` (Inhalt kreis-sicher für TikTok).
 
 ## Verbindliche Regeln (Master-Briefing)
 

@@ -5,6 +5,8 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 W, H, FPS = 1080, 1920, 30
 THEME, EP, SCENES = sys.argv[1], sys.argv[2], sys.argv[3]
+CHANNEL = os.environ.get("CHANNEL", "AI72")          # Kanalname im Stempel; alte Folgen: CHANNEL="MAL ANGENOMMEN"
+HANDLE = os.environ.get("HANDLE", "@ai72")           # TikTok-Handle für Follow-Szenen (beim Betreiber bestätigen)
 PREVIEW = [float(v) for v in sys.argv[4:]]
 LINES = json.load(open("script.json"))
 SEGS = [(a, b, l) for (a, b), l in zip(json.load(open("segs_abs.json")), LINES)]
@@ -251,10 +253,10 @@ def subtitle(canvas, gt):
 STAMP = Image.new("RGBA", (440, 64), (0, 0, 0, 0)); _sd = ImageDraw.Draw(STAMP)
 if THEME == "line":
     _sd.rectangle((1, 1, 438, 62), outline=(200, 200, 200), width=2)
-    _sd.text((220, 33), f"MAL ANGENOMMEN #{EP}", font=font(28, "mono"), fill=(220, 220, 220), anchor="mm")
+    _sd.text((220, 33), f"{CHANNEL} #{EP}", font=font(28, "mono"), fill=(220, 220, 220), anchor="mm")
 else:
     _sd.rounded_rectangle((0, 0, 439, 63), radius=31, fill=ACC, outline=OUT, width=4)
-    _sd.text((220, 33), f"MAL ANGENOMMEN #{EP}", font=font(30, "Black"), fill=OUT, anchor="mm")
+    _sd.text((220, 33), f"{CHANNEL} #{EP}", font=font(30, "Black"), fill=OUT, anchor="mm")
 
 # ---------------- scenes ----------------
 exec(open(SCENES).read())   # defines SCENE(canvas, name, lt, gt, dur) and KEYS
