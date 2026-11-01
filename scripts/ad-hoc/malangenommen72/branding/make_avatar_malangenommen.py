@@ -1,32 +1,44 @@
-# Profilbild malangenommen72 – Neon-Lila-Kanallook (Mond + Fragezeichen), 1080x1080, kreis-sicher.
-import math, random
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
-S = 1080; C = S / 2
-Y, PINK, CY, DARK, CREAM = (255, 214, 26), (255, 92, 190), (60, 230, 255), (20, 6, 40), (248, 238, 255)
+# Profilbild malangenommen72 – DARK-Stil (Stil A: weiße Linien auf Schwarz), 1080x1080, kreis-sicher.
+import math
+from PIL import Image, ImageDraw, ImageFont
+S = 1080; C = S / 2; W_ = (255, 255, 255)
 def ms(size, w):
     f = ImageFont.truetype("/tmp/fonts/Montserrat.ttf", size); f.set_variation_by_name(w); return f
-LG = lambda size: ImageFont.truetype("/tmp/fonts/LuckiestGuy.ttf", size)
-im = Image.new("RGBA", (S, S)); d = ImageDraw.Draw(im)
-for i in range(S):
-    t = i / S; d.line((0, i, S, i), fill=tuple(int(a + (b - a) * t) for a, b in zip((24, 8, 58), (120, 26, 140))) + (255,))
-random.seed(5)
-for _ in range(80):
-    x, y, r = random.randint(0, S), random.randint(0, S), random.uniform(1.5, 4); d.ellipse((x - r, y - r, x + r, y + r), fill=(255, 255, 255, 200))
-glow = Image.new("RGBA", (S, S), (0, 0, 0, 0)); g = ImageDraw.Draw(glow)
-g.ellipse((150, 110, 930, 890), outline=CY + (255,), width=26)
-im.alpha_composite(glow.filter(ImageFilter.GaussianBlur(22)))
-d = ImageDraw.Draw(im)
-d.ellipse((150, 110, 930, 890), fill=(36, 34, 110, 255), outline=CY + (255,), width=14)
-m = Image.new("L", (S, S), 0); md = ImageDraw.Draw(m)
-md.ellipse((240, 260, 640, 660), fill=255); md.ellipse((350, 190, 750, 590), fill=0)
-moon = Image.new("RGBA", (S, S), Y + (255,))
-mg = Image.new("RGBA", (S, S), (0, 0, 0, 0)); mg.paste(moon, (0, 0), m)
-im.alpha_composite(mg.filter(ImageFilter.GaussianBlur(18))); im.paste(moon, (0, 0), m)
-d.text((690, 400), "?", font=LG(330), fill=CREAM, anchor="mm", stroke_width=12, stroke_fill=DARK)
-d.rounded_rectangle((C - 330 + 12, 760 + 14, C + 330 + 12, 900 + 14), radius=70, fill=DARK)
-d.rounded_rectangle((C - 330, 760, C + 330, 900), radius=70, fill=PINK, outline=DARK, width=10)
-d.text((C, 832), "MAL ANGENOMMEN", font=LG(78), fill=(255, 255, 255), anchor="mm", stroke_width=6, stroke_fill=DARK)
-d.text((C, 960), "72", font=LG(90), fill=Y, anchor="mm", stroke_width=8, stroke_fill=DARK)
-im.convert("RGB").save("malangenommen72_Profil_Neon.png")
+MONO = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 30)
+im = Image.new("RGB", (S, S), (0, 0, 0)); d = ImageDraw.Draw(im)
+for x in range(0, S, 54): d.line((x, 0, x, S), fill=(24, 24, 24))
+for y in range(0, S, 54): d.line((0, y, S, y), fill=(24, 24, 24))
+d.ellipse((90, 90, S - 90, S - 90), outline=W_, width=6)
+d.ellipse((120, 120, S - 120, S - 120), outline=(90, 90, 90), width=2)
+for k in range(72):
+    a = math.radians(k * 5); r0 = 455 if k % 6 else 435
+    d.line((C + r0 * math.cos(a), C + r0 * math.sin(a), C + 470 * math.cos(a), C + 470 * math.sin(a)), fill=(200, 200, 200), width=3)
+# crescent moon as outline: outer arc + inner arc
+R, mx, my = 210, C - 70, 420
+off = (95, -70); r2 = 190
+def inside2(px, py): return math.dist((px, py), (mx + off[0], my + off[1])) < r2
+outer = [(mx + R * math.cos(math.radians(t)), my + R * math.sin(math.radians(t))) for t in range(0, 361, 2)]
+inner = [(mx + off[0] + r2 * math.cos(math.radians(t)), my + off[1] + r2 * math.sin(math.radians(t))) for t in range(0, 361, 2)]
+def draw_run(pts, keep):
+    run = []
+    for p in pts:
+        if keep(p): run.append(p)
+        else:
+            if len(run) > 1: d.line(run, fill=W_, width=9, joint="curve")
+            run = []
+    if len(run) > 1: d.line(run, fill=W_, width=9, joint="curve")
+draw_run(outer, lambda p: not inside2(*p))
+draw_run(inner, lambda p: math.dist(p, (mx, my)) < R)
+# construction lines (technical drawing)
+d.line((mx, my - R - 40, mx, my + R + 40), fill=(110, 110, 110), width=2)
+d.line((mx - R - 40, my, mx + R + 40, my), fill=(110, 110, 110), width=2)
+d.text((mx - R - 30, my - R - 20), "R", font=MONO, fill=(150, 150, 150))
+# question mark outline style
+d.text((C + 190, 400), "?", font=ms(300, "Bold"), fill=(0, 0, 0), anchor="mm", stroke_width=8, stroke_fill=W_)
+d.text((C, 745), "MAL ANGENOMMEN", font=ms(64, "Bold"), fill=W_, anchor="mm")
+d.line((C - 250, 795, C + 250, 795), fill=W_, width=4)
+d.text((C, 850), "72", font=ms(80, "Bold"), fill=W_, anchor="mm")
+d.text((C, 920), "WAS WÄRE WENN", font=MONO, fill=(170, 170, 170), anchor="mm")
+im.save("malangenommen72_Profil_Dark.png")
 pv = Image.new("RGB", (S, S), (40, 40, 40)); mk = Image.new("L", (S, S), 0); ImageDraw.Draw(mk).ellipse((0, 0, S, S), fill=255)
-pv.paste(im.convert("RGB"), (0, 0), mk); pv.resize((360, 360)).save("/home/user/OmniRoute/_artifacts/malangenommen72/avatar_mal_preview.png")
+pv.paste(im, (0, 0), mk); pv.resize((360, 360)).save("/home/user/OmniRoute/_artifacts/malangenommen72/avatar_mal_preview.png")

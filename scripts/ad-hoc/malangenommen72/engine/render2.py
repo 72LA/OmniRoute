@@ -5,8 +5,9 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 W, H, FPS = 1080, 1920, 30
 THEME, EP, SCENES = sys.argv[1], sys.argv[2], sys.argv[3]
-CHANNEL = os.environ.get("CHANNEL", "AI72")          # Kanalname im Stempel; alte Folgen: CHANNEL="MAL ANGENOMMEN"
-HANDLE = os.environ.get("HANDLE", "@ai72")           # TikTok-Handle für Follow-Szenen (beim Betreiber bestätigen)
+# Kanal je Stil: line (Dark) = malangenommen72, flat (Wissen) = AI72
+CHANNEL = os.environ.get("CHANNEL", "MAL ANGENOMMEN" if THEME == "line" else "AI72")
+HANDLE = os.environ.get("HANDLE", "@malangenommen72" if THEME == "line" else "@ai72")  # AI72-Handle beim Betreiber bestätigen
 PREVIEW = [float(v) for v in sys.argv[4:]]
 LINES = json.load(open("script.json"))
 SEGS = [(a, b, l) for (a, b), l in zip(json.load(open("segs_abs.json")), LINES)]

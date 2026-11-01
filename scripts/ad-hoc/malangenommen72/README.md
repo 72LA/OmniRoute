@@ -4,18 +4,21 @@ Produktionspaket für den TikTok-Kanal **@malangenommen72** (Psychologie, Wissen
 Nicht Teil von OmniRoute – reines Ad-hoc-Werkzeug. Freigegeben vom Kanal-Betreiber: Videos #03 und #04
 sind die **Referenz-Qualität** für alle künftigen Videos.
 
-## Kanalname – AB JETZT: **AI72**
+## Zwei Kanäle – feste Zuordnung (seit 2026-11-01)
 
-Seit 2026-11-01: Der Wissens-Kanal heißt **AI72** (statt „malangenommen72“).
-- Follow-Aufruf: „Folge AI72 …“ (Sprechtext: „Folge A I zweiundsiebzig …“). Genaues TikTok-Handle beim
-  Betreiber bestätigen; Engine-Default `HANDLE=@ai72`, in Follow-Szenen `HANDLE` statt festem Text nutzen.
-- Stempel: „AI72 #NN“ (Engine-Default `CHANNEL=AI72`), Nummerierung läuft weiter ab #05.
-- Hashtag `#ai72` statt `#malangenommen72`.
-- Es gibt ZWEI Kanäle: **AI72** (Wissens-Videos in Stil A + B) und **malangenommen72** (bleibt bestehen,
-  Neon-Lila-Look mit Mond + Fragezeichen). Profilbild malangenommen72: `branding/malangenommen72_Profil_Neon.png`
-  (`branding/make_avatar_malangenommen.py`). Bei Unklarheit fragen, für welchen Kanal ein Video ist.
-- Profilbilder AI72: `branding/AI72_Profil_StilA_Lineart.png` (Stil A) und `branding/AI72_Profil_StilB_Flat.png`
-  (Stil B), erzeugt mit `branding/make_avatars.py` (Inhalt kreis-sicher für TikTok).
+| Kanal | Stil | Profilbild |
+|---|---|---|
+| **malangenommen72** | **Stil A – Dark** (weiße Line-Art auf Schwarz) | `branding/malangenommen72_Profil_Dark.png` |
+| **AI72** | **Stil B – Wissen** (flache Infografik, dunkelblau/gelb/pink) | `branding/AI72_Profil_StilB_Flat.png` |
+
+- Jede Anfrage = zwei Videos: eins für malangenommen72 (Stil A), eins für AI72 (Stil B).
+- Follow-Aufruf, Stempel und Hashtag passen zum Kanal: „Folge malangenommen72 …“ / `#malangenommen72`
+  bzw. „Folge AI72 …“ (Sprechtext „A I zweiundsiebzig“) / `#ai72`.
+- Engine: `render2.py` setzt `CHANNEL`/`HANDLE` automatisch je Stil (`line` → malangenommen72, `flat` → AI72).
+  Follow-Szenen sollen `HANDLE` verwenden statt festen Text. AI72-Handle (`@ai72`) beim Betreiber bestätigen.
+- Nummerierung läuft je Kanal ab #05 weiter.
+- Profilbild-Skripte: `branding/make_avatar_malangenommen.py`, `branding/make_avatars.py`
+  (erzeugt zusätzlich eine AI72-Variante im Line-Stil, nur als Alternative).
 
 ## Verbindliche Regeln (Master-Briefing)
 
@@ -25,7 +28,7 @@ Seit 2026-11-01: Der Wissens-Kanal heißt **AI72** (statt „malangenommen72“)
   Abschluss mit Frage / Teil-Aufruf.
 - Länge 30–42 s, 9:16 (1080×1920), Untertitel eingebrannt, keine Musik (die fügt der Betreiber in der
   TikTok-App hinzu, privates Konto).
-- Pro Video: Caption + **max. 5 Hashtags** (immer `#malangenommen72`), Quellen nur für den Betreiber.
+- Pro Video: Caption + **max. 5 Hashtags** (immer der Kanal-Hashtag `#malangenommen72` bzw. `#ai72`), Quellen nur für den Betreiber.
 - Nur echte, geprüfte Fakten; Unsicherheit sprachlich kennzeichnen („meistens“, „etwa“, „in einer Studie“).
 - Themen nicht wiederholen, Formulierungen variieren. Bevorzugt: Wiedererkennung, Diskussion, Teilbarkeit.
 - Stempel „MAL ANGENOMMEN #NN“ unter den Untertiteln, Nummer fortlaufend.
