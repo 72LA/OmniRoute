@@ -1,0 +1,35 @@
+MALANGENOMMEN72 – VIDEO #03 + #04
+
+=====================================
+#03 ECHO IM CALL (Stil A: Line-Art schwarz/weiß) – ca. 42 s
+=====================================
+
+CAPTION + HASHTAGS (komplett kopieren):
+
+Hallo? … hallo? … 🙃 Warum dich dein eigenes Echo im Call komplett aus dem Takt bringt.
+
+#psychologie #wusstestdu #gehirn #videocall #malangenommen72
+
+Titelbild: Frame mit "HÖRST DU MICH?" (Anfang)
+
+Quellen (nur für dich):
+- Echo entsteht meist beim Gegenüber (Lautsprecher -> Mikrofon -> zurück), Echo-Unterdrückung muss auf beiden Seiten laufen: Shure, "How does echo cancellation work during a video conference?"; Microsoft Azure Docs "The user experiences echo during the call". Faustregel, keine Garantie -> im Video "meistens".
+- Verzögerte eigene Stimme stört das Sprechen, stärkster Effekt um ca. 200 ms: Lee (1950) "Some effects of side-tone delay"; Fairbanks (1955).
+- Stör-Gerät: Kurihara & Tsukada (2012), "SpeechJammer", arXiv:1202.6106.
+
+=====================================
+#04 OHRWURM (Stil B: flache Infografik, dunkelblau/gelb/pink) – ca. 36 s
+=====================================
+
+CAPTION + HASHTAGS (komplett kopieren):
+
+Welcher Song läuft gerade in deinem Kopf? 🎶 Ab in die Kommentare!
+
+#ohrwurm #psychologie #musik #wusstestdu #malangenommen72
+
+Titelbild: Frame mit "OHRWURM?!" (Anfang)
+
+Quellen (nur für dich):
+- Rund 3.000 Befragte, typische Merkmale (schnelleres Tempo, eingängige Melodie mit ungewöhnlichen Sprüngen), Platz 1 "Bad Romance": Jakubowski et al. (2016), "Dissecting an Earworm", Psychology of Aesthetics, Creativity, and the Arts.
+- "Fast 9 von 10 jede Woche": Liikkanen (2012), zitiert u. a. von NPR – Zahl stammt aus Sekundärquelle.
+- Kaugummi: Beaman, Powell & Rapley (2015), Quarterly Journal of Experimental Psychology 68(6), 1049–1057.

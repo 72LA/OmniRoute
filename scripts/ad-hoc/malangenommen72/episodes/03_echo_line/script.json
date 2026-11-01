@@ -1,0 +1,11 @@
+[
+ {"say":"Hallo? Hörst du mich? Ich höre mich doppelt!","show":"Hallo? Hörst du mich? Ich höre mich doppelt!","scene":"call","gap":0},
+ {"say":"Kennst du das? Im Videocall hörst du deine eigene Stimme, kurz verzögert.","show":"Kennst du das? Im Videocall hörst du deine eigene Stimme, kurz verzögert.","scene":"call2","gap":0},
+ {"say":"Und plötzlich kannst du kaum noch normal sprechen.","show":"Und plötzlich kannst du kaum noch normal sprechen.","scene":"stutter","gap":0},
+ {"say":"Schuld ist meistens nicht dein Handy, sondern das der anderen Person. Ihr Lautsprecher spielt deine Stimme ab, ihr Mikrofon nimmt sie wieder auf und schickt sie zurück.","show":"Schuld ist meistens nicht dein Handy, sondern das der anderen Person. Ihr Lautsprecher spielt deine Stimme ab, ihr Mikrofon nimmt sie wieder auf und schickt sie zurück.","scene":"loop","gap":0},
+ {"say":"Folge mal angenommen zweiundsiebzig für mehr solche Aha-Momente.","show":"Folge @malangenommen72 für mehr solche Aha-Momente.","scene":"follow","gap":0},
+ {"say":"Aber warum bringt dich das so aus dem Takt? Dein Gehirn vergleicht beim Sprechen ständig, was du sagen willst, mit dem, was du hörst.","show":"Aber warum bringt dich das so aus dem Takt? Dein Gehirn vergleicht beim Sprechen ständig, was du sagen willst, mit dem, was du hörst.","scene":"brain","gap":0},
+ {"say":"Kommt deine Stimme etwa eine fünftel Sekunde zu spät zurück, gerät dieser Abgleich durcheinander. Viele fangen dann an zu stocken.","show":"Kommt deine Stimme etwa eine fünftel Sekunde zu spät zurück, gerät dieser Abgleich durcheinander. Viele fangen dann an zu stocken.","scene":"delay","gap":0},
+ {"say":"Japanische Forscher bauten daraus sogar ein Gerät, das Menschen beim Reden aus dem Konzept bringt.","show":"Japanische Forscher bauten daraus sogar ein Gerät, das Menschen beim Reden aus dem Konzept bringt.","scene":"jammer","gap":0},
+ {"say":"Schick das der Person, bei der du dich im Call immer doppelt hörst.","show":"Schick das der Person, bei der du dich im Call immer doppelt hörst.","scene":"share","gap":0}
+]
