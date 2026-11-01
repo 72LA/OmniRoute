@@ -11,7 +11,10 @@ Seit 2026-11-01: Der Wissens-Kanal heißt **AI72** (statt „malangenommen72“)
   Betreiber bestätigen; Engine-Default `HANDLE=@ai72`, in Follow-Szenen `HANDLE` statt festem Text nutzen.
 - Stempel: „AI72 #NN“ (Engine-Default `CHANNEL=AI72`), Nummerierung läuft weiter ab #05.
 - Hashtag `#ai72` statt `#malangenommen72`.
-- Profilbilder: `branding/AI72_Profil_StilA_Lineart.png` (Stil A) und `branding/AI72_Profil_StilB_Flat.png`
+- Es gibt ZWEI Kanäle: **AI72** (Wissens-Videos in Stil A + B) und **malangenommen72** (bleibt bestehen,
+  Neon-Lila-Look mit Mond + Fragezeichen). Profilbild malangenommen72: `branding/malangenommen72_Profil_Neon.png`
+  (`branding/make_avatar_malangenommen.py`). Bei Unklarheit fragen, für welchen Kanal ein Video ist.
+- Profilbilder AI72: `branding/AI72_Profil_StilA_Lineart.png` (Stil A) und `branding/AI72_Profil_StilB_Flat.png`
   (Stil B), erzeugt mit `branding/make_avatars.py` (Inhalt kreis-sicher für TikTok).
 
 ## Verbindliche Regeln (Master-Briefing)
