@@ -1,0 +1,9 @@
+[
+ {"say":"Mal angenommen, ab morgen könnte niemand mehr lügen.","show":"Mal angenommen, ab morgen könnte niemand mehr lügen.","scene":"hook"},
+ {"say":"Klingt gut. Aber in einer großen Umfrage gaben Amerikaner im Schnitt eins Komma sechs fünf Lügen pro Tag an.","show":"Klingt gut. Aber in einer großen Umfrage gaben Amerikaner im Schnitt 1,65 Lügen pro Tag an.","scene":"avg"},
+ {"say":"Das Spannende: Sechzig Prozent hatten an dem Tag gar nicht gelogen. Fast die Hälfte aller Lügen kam von nur fünf Prozent der Menschen.","show":"Das Spannende: 60 % hatten an dem Tag gar nicht gelogen. Fast die Hälfte aller Lügen kam von nur 5 % der Menschen.","scene":"skew"},
+ {"say":"Folge mal angenommen zweiundsiebzig für mehr Gedankenexperimente.","show":"Folge @malangenommen72 für mehr Gedankenexperimente.","scene":"follow"},
+ {"say":"Ohne Lügen gäbe es auch keine Notlügen mehr. Das Essen ist lecker. Mir geht's gut. Schöne Frisur.","show":"Ohne Lügen gäbe es auch keine Notlügen mehr. „Das Essen ist lecker.“ „Mir geht's gut.“ „Schöne Frisur.“","scene":"white"},
+ {"say":"Vielleicht gäbe es mehr Streit, aber auch mehr Vertrauen. Das ist allerdings nur ein Gedankenexperiment.","show":"Vielleicht gäbe es mehr Streit, aber auch mehr Vertrauen. Das ist allerdings nur ein Gedankenexperiment.","scene":"scale"},
+ {"say":"Würdest du in so einer Welt leben wollen? Schreib's in die Kommentare.","show":"Würdest du in so einer Welt leben wollen? Schreib's in die Kommentare.","scene":"ask"}
+]

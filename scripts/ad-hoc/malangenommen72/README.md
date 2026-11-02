@@ -20,6 +20,10 @@ sind die **Referenz-Qualität** für alle künftigen Videos.
 - Profilbild-Skripte: `branding/make_avatar_malangenommen.py`, `branding/make_avatars.py`
   (erzeugt zusätzlich eine AI72-Variante im Line-Stil, nur als Alternative).
 
+## Render-Werkzeug
+
+Ab #05: **HyperFrames-Pipeline** – siehe `hyperframes/README.md`. Die Pillow-Engine (`engine/`) bleibt als Fallback.
+
 ## Verbindliche Regeln (Master-Briefing)
 
 - Jede Anfrage = **zwei Videos**: eins in **Stil A**, eins in **Stil B**.
@@ -97,6 +101,8 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | 02 | Warum liebst du deinen Bruder? (Geschwister, Kin-Detection) | alter Neon-Lila-Stil |
 | 03 | Echo im Call / verzögerte Stimme | A line |
 | 04 | Ohrwurm | B flat |
+| 05 | Mal angenommen, niemand könnte lügen (malangenommen72) | A Dark, HyperFrames |
+| 05 | Warum kannst du dich nicht selbst kitzeln? (AI72) | B Wissen, HyperFrames |
 | – | Türschwellen-Effekt | vom Betreiber selbst schon gemacht |
 
 ## Kanal-Befund (Stand 2026-11-01)
