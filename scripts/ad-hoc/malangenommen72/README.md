@@ -103,6 +103,8 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | 04 | Ohrwurm | B flat |
 | 05 | Mal angenommen, niemand könnte lügen (malangenommen72) | A Dark, HyperFrames |
 | 05 | Warum kannst du dich nicht selbst kitzeln? (AI72) | B Wissen, HyperFrames |
+| 06 | Mal angenommen, du könntest nie wieder vergessen (malangenommen72) | A Dark, HyperFrames |
+| 06 | Warum werden Finger im Wasser schrumpelig? (AI72) | B Wissen, HyperFrames |
 | – | Türschwellen-Effekt | vom Betreiber selbst schon gemacht |
 
 ## Kanal-Befund (Stand 2026-11-01)
