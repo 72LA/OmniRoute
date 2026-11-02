@@ -30,7 +30,7 @@ Ab #05: **HyperFrames-Pipeline** – siehe `hyperframes/README.md`. Die Pillow-E
 - Aufbau jedes Videos: **Hook** (1–3 s, keine Begrüßung) → Hauptteil mit konkretem Beispiel →
   **genau ein** kurzer Follow-Aufruf in der Mitte („Folge @malangenommen72 …“) →
   Abschluss mit Frage / Teil-Aufruf.
-- Länge 30–42 s, 9:16 (1080×1920), Untertitel eingebrannt, keine Musik (die fügt der Betreiber in der
+- Länge **35–45 s** (seit 2026-11-02, verbindlich; Skript auf ~95–125 Wörter auslegen), 9:16 (1080×1920), Untertitel eingebrannt, keine Musik (die fügt der Betreiber in der
   TikTok-App hinzu, privates Konto).
 - Pro Video: Caption + **max. 5 Hashtags** (immer der Kanal-Hashtag `#malangenommen72` bzw. `#ai72`), Quellen nur für den Betreiber.
 - Nur echte, geprüfte Fakten; Unsicherheit sprachlich kennzeichnen („meistens“, „etwa“, „in einer Studie“).
