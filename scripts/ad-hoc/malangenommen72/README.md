@@ -119,6 +119,8 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | 05 | Warum kannst du dich nicht selbst kitzeln? (AI72) | B Wissen, HyperFrames |
 | 06 | Mal angenommen, du könntest nie wieder vergessen (malangenommen72) | A Dark, HyperFrames |
 | 06 | Warum werden Finger im Wasser schrumpelig? (AI72) | B Wissen, HyperFrames |
+| 07 | Mal angenommen, du könntest Gedanken lesen (malangenommen72) | A Dark, HyperFrames |
+| 07 | Warum knurrt der Magen? (AI72) | kg-Hausstil, HyperFrames |
 | – | Türschwellen-Effekt | vom Betreiber selbst schon gemacht |
 
 ## Kanal-Befund (Stand 2026-11-01)

@@ -1,0 +1,9 @@
+[
+ {"say":"Warum knurrt dein Magen, wenn du Hunger hast?","show":"Warum knurrt dein Magen, wenn du Hunger hast?","scene":"hook"},
+ {"say":"Das Geräusch kommt gar nicht nur aus dem Magen, sondern auch aus dem Darm.","show":"Das Geräusch kommt gar nicht nur aus dem Magen, sondern auch aus dem Darm.","scene":"source"},
+ {"say":"Zwischen den Mahlzeiten startet dein Verdauungssystem etwa alle neunzig bis hundertzwanzig Minuten eine Putzwelle. Muskeln ziehen sich zusammen und schieben Reste, Luft und Flüssigkeit weiter.","show":"Zwischen den Mahlzeiten startet dein Verdauungssystem etwa alle 90 bis 120 Minuten eine Putzwelle. Muskeln ziehen sich zusammen und schieben Reste, Luft und Flüssigkeit weiter.","scene":"wave"},
+ {"say":"Folge A I zweiundsiebzig für mehr Wissen über deinen Körper.","show":"Folge @ai72 für mehr Wissen über deinen Körper.","scene":"follow"},
+ {"say":"Ist dein Bauch leer, dämpft nichts das Gluckern. Deshalb hörst du es dann so laut.","show":"Ist dein Bauch leer, dämpft nichts das Gluckern. Deshalb hörst du es dann so laut.","scene":"empty"},
+ {"say":"Gesteuert wird das unter anderem vom Hormon Motilin. Forscher vermuten sogar: Diese Wellen sind ein Hungersignal an dein Gehirn.","show":"Gesteuert wird das unter anderem vom Hormon Motilin. Forscher vermuten sogar: Diese Wellen sind ein Hungersignal an dein Gehirn.","scene":"motilin"},
+ {"say":"Wann knurrt dein Magen am peinlichsten? Schreib's in die Kommentare.","show":"Wann knurrt dein Magen am peinlichsten? Schreib's in die Kommentare.","scene":"ask"}
+]

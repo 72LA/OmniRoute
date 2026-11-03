@@ -154,6 +154,9 @@ def person(cx, gy, s=1.0, pose="wave"):
         g += f'<path d="M100 -455 C 170 -480, 205 -560, 205 -640" fill="none" stroke="{HOOD}" stroke-width="64" stroke-linecap="round"/>'
         g += f'<path d="M128 -470 C 185 -500, 210 -560, 212 -620" fill="none" stroke="{HOOD_D}" stroke-width="26" stroke-linecap="round"/>'
         g += hand(206, -708, 0.42, 8, 3)
+    elif pose == "belly":  # hand on the tummy
+        g += f'<path d="M100 -445 C 160 -400, 150 -320, 60 -300" fill="none" stroke="{HOOD}" stroke-width="62" stroke-linecap="round"/>'
+        g += shaded(circ(40, -300, 44), SKIN, "M40 -350 H100 V-250 H40 Z", SKIN_D)
     else:  # point
         g += f'<path d="M100 -445 C 170 -445, 235 -470, 300 -510" fill="none" stroke="{HOOD}" stroke-width="62" stroke-linecap="round"/>'
         g += finger(312, -512, 78, 42, 32, 60) + f'<circle cx="312" cy="-516" r="38" fill="{SKIN}"/>'
