@@ -20,6 +20,20 @@ sind die **Referenz-Qualität** für alle künftigen Videos.
 - Profilbild-Skripte: `branding/make_avatar_malangenommen.py`, `branding/make_avatars.py`
   (erzeugt zusätzlich eine AI72-Variante im Line-Stil, nur als Alternative).
 
+## malangenommen72 – Dark v2 (ab #08, beim nächsten Go anwenden)
+
+Vom Betreiber per Referenz-Screenshots vorgegeben (2026-11-03). Entwurf: `branding/stylelab_dark/malangenommen72_Dark_v2.png`
+(`make_dark2.py`). Ersetzt den bisherigen Dark-Stil (Linienraster) für malangenommen72:
+- Reines Schwarz, **Punktraster** nur im Mittelband, zum Rand ausgeblendet.
+- **Glow/Bloom** auf allen weißen Elementen; weicher Lichtfleck hinter der Hauptfigur.
+- **Massive, leuchtende weiße Figur** (Seitenansicht, runde Formen: Kopf, Pill-Torso, Beine; Posen stehen/sitzen).
+- **Metapher-Diagramme**: z. B. „ERWARTUNGEN“ (gestrichelter Balken) über „UMSTÄNDE“ (durchgezogen),
+  Maßlinie „GLEICHE LÜCKE“, Skala mit Werten und gestrichelten Hilfslinien.
+- **Gemütliche Alltagsszenen** in Linien: Schreibtisch, Laptop, Tasse mit Dampf, Fenster mit Mond, Kalender mit Jahr.
+- Beschriftung: kleine Großbuchstaben mit weitem Abstand (Letter-Spacing ~0.38 em); Titel weiß mit Glow.
+- Erste Themenidee dazu: „Mal angenommen, du verdienst ab morgen das Doppelte – wärst du glücklicher?“
+  (hedonische Anpassung; Fakten vor Produktion prüfen).
+
 ## AI72-Hausstil (ab #07) – vom Betreiber freigegeben am 2026-11-03
 
 AI72 nutzt ab #07 den **kg-Stil** (Theme `kg` in `hyperframes/build_hf.py`, Bausteine in `hyperframes/kg_lib.py`,
