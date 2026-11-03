@@ -52,6 +52,18 @@ Vorlage/Test `hyperframes/scenes_kg_demo.py`, Entwürfe `branding/stylelab_ai72/
 
 Ab #05: **HyperFrames-Pipeline** – siehe `hyperframes/README.md`. Die Pillow-Engine (`engine/`) bleibt als Fallback.
 
+## Reichweiten-Regeln (seit 2026-11-03, aus Betreiber-Referenzen)
+
+Quellen: TikTok-Hinweis „So erstellt man einen hilfreichen Beitrag“, Kanal PsychoLogisch, Rätsel-Video von EndzeitAkten.
+- **Hilfreich = mehr Reichweite:** jedes Video endet mit einem **konkreten, umsetzbaren Tipp** („Probier es heute aus …“);
+  echte Studien/Details nennen; ehrliche Einordnung; Caption **> 50 Zeichen** mit Kern-Erkenntnis (nicht nur Emojis).
+- **malangenommen72** (Dark v2 bleibt): PsychoLogisch-Formel übernehmen, eigener Inhalt: ein konkreter Trick / ein Wort,
+  **Vorher→Nachher-Zahl** (z. B. „60 % → 93 %“), dann „So nutzt du es“-Checkliste. Format bleibt „Mal angenommen …“.
+- **AI72: jedes Video enthält ein Rätsel** (Format EndzeitAkten, eigene Rätsel): Rätselkarte oben → Frage →
+  Countdown „Schreib deine Antwort in die Kommentare, bevor du weiterschaust“ → Follow-Aufruf („jedes Mal ein neues Rätsel“)
+  → Lösung mit Wissens-Erklärung → Bonus-Fakt → „Schick's jemandem, der es nicht lösen kann“.
+  Rätsel müssen eine **belegbare Wissens-Lösung** haben (kein Copy fremder Rätsel-Videos).
+
 ## Verbindliche Regeln (Master-Briefing)
 
 - Jede Anfrage = **zwei Videos**: eins in **Stil A**, eins in **Stil B**.
@@ -135,6 +147,8 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | 06 | Warum werden Finger im Wasser schrumpelig? (AI72) | B Wissen, HyperFrames |
 | 07 | Mal angenommen, du könntest Gedanken lesen (malangenommen72) | A Dark, HyperFrames |
 | 07 | Warum knurrt der Magen? (AI72) | kg-Hausstil, HyperFrames |
+| 08 | Ein Wort, das Ja macht – „weil“ (malangenommen72) | Dark v2, HyperFrames |
+| 08 | Rätsel: Warum sind Gullydeckel rund? (AI72) | kg + Rätsel, HyperFrames |
 | – | Türschwellen-Effekt | vom Betreiber selbst schon gemacht |
 
 ## Kanal-Befund (Stand 2026-11-01)

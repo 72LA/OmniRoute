@@ -16,7 +16,8 @@ TOTAL = round(segs[-1][1] + 1.6, 2)
 import wave as _w
 with _w.open(f"{EPD}/full_voice.wav") as _f: VODUR = round(_f.getnframes() / _f.getframerate(), 3)
 W, H = 1080, 1920
-LINE = STYLE == "line"
+LINE = STYLE in ("line", "dark2")
+DARK2 = STYLE == "dark2"   # malangenommen72 Dark v2
 KG = STYLE == "kg"   # AI72 house style (stylelab v3)
 CHANNEL = "MAL ANGENOMMEN" if LINE else "AI72"
 
@@ -90,7 +91,11 @@ for gi, (a, b, ws) in enumerate(groups):
     cap_js.append(f'tl.set("#{gid}", {{visibility: "visible", opacity: 1}}, {a});'
                   f'tl.fromTo("#{gid}", {{scale: 0.9}}, {{scale: 1, duration: 0.14, ease: "power3.out"}}, {a});'
                   f'tl.set("#{gid}", {{opacity: 0, visibility: "hidden"}}, {b + 0.04 if gi + 1 == len(groups) or groups[gi+1][0] > b + 0.04 else groups[gi+1][0]});')
-if LINE:
+if DARK2:
+    cap_css = (".cg{position:absolute;left:0;right:0;top:1190px;text-align:center;font-family:var(--font-display);font-weight:800;font-size:70px;color:#fff;"
+               "visibility:hidden;opacity:0;padding:0 80px;line-height:1.15;overflow:visible;text-shadow:0 0 16px rgba(255,255,255,.45)}"
+               ".cg .key{background:#fff;color:#000;padding:0 12px;text-shadow:none}")
+elif LINE:
     cap_css = (".cg{position:absolute;left:0;right:0;top:1150px;text-align:center;font-family:var(--font-display);font-weight:800;font-size:76px;color:#fff;"
                "visibility:hidden;opacity:0;padding:0 80px;line-height:1.15;overflow:visible}"
                ".cg .key{background:#fff;color:#000;padding:0 12px}"
@@ -127,7 +132,13 @@ for k, (name, si, off, vol) in enumerate(sc.SFX):
     sfx_tags.append(f'<audio id="fx{k}" class="clip" src="assets/sfx/{name}.mp3" data-start="{t}" data-duration="{fd}" data-track-index="{10 + k}" data-volume="{vol}"></audio>')
 
 # ---------------- background + stamp ----------------
-if LINE:
+if DARK2:
+    import dark2_lib
+    bg_css = """#bg{position:absolute;inset:0}
+      #stamp{position:absolute;left:0;right:0;top:190px;text-align:center}
+      #stamp span{font-family:var(--font-display);font-weight:600;font-size:28px;letter-spacing:.35em;color:#cfcfcf;border:2px solid #777;padding:8px 20px}"""
+    bg_html = '<svg id="bg" width="1080" height="1920" viewBox="0 0 1080 1920">' + dark2_lib.background() + '</svg>'
+elif LINE:
     bg_css = """#bg{position:absolute;inset:0;background-color:#000;
       background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:60px 60px}
       .mark{position:absolute;width:50px;height:50px;border-color:#777;border-style:solid;border-width:0}
