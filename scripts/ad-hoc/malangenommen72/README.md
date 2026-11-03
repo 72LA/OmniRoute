@@ -54,6 +54,8 @@ Ab #05: **HyperFrames-Pipeline** – siehe `hyperframes/README.md`. Die Pillow-E
 
 ## Reichweiten-Regeln (seit 2026-11-03, aus Betreiber-Referenzen)
 
+**Vollständiges Playbook + Pflicht-Checkliste pro Video: `REICHWEITE.md` – vor jeder Produktion lesen und abhaken.**
+
 Quellen: TikTok-Hinweis „So erstellt man einen hilfreichen Beitrag“, Kanal PsychoLogisch, Rätsel-Video von EndzeitAkten.
 - **Hilfreich = mehr Reichweite:** jedes Video endet mit einem **konkreten, umsetzbaren Tipp** („Probier es heute aus …“);
   echte Studien/Details nennen; ehrliche Einordnung; Caption **> 50 Zeichen** mit Kern-Erkenntnis (nicht nur Emojis).
