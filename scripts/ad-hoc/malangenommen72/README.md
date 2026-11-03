@@ -151,6 +151,8 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | 07 | Warum knurrt der Magen? (AI72) | kg-Hausstil, HyperFrames |
 | 08 | Ein Wort, das Ja macht – „weil“ (malangenommen72) | Dark v2, HyperFrames |
 | 08 | Rätsel: Warum sind Gullydeckel rund? (AI72) | kg + Rätsel, HyperFrames |
+| 09 | Fuß-in-der-Tür (malangenommen72) | Dark v2, HyperFrames |
+| 09 | Rätsel: Warum schwimmt Eis? (AI72) | kg + Rätsel, HyperFrames |
 | – | Türschwellen-Effekt | vom Betreiber selbst schon gemacht |
 
 ## Kanal-Befund (Stand 2026-11-01)

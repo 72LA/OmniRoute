@@ -1,0 +1,9 @@
+[
+ {"say":"Eine kleine Bitte, und Menschen sagen viermal so oft Ja zu einer großen.","show":"Eine kleine Bitte, und Menschen sagen 4-mal so oft Ja zu einer großen.","scene":"hook"},
+ {"say":"Mal angenommen, du brauchst Hilfe bei etwas Großem. Am Ende zeige ich dir, wie du das nutzt.","show":"Mal angenommen, du brauchst Hilfe bei etwas Großem. Am Ende zeige ich dir, wie du das nutzt.","scene":"loop"},
+ {"say":"Neunzehnhundertsechsundsechzig fragten Forscher Hausbesitzer, ob sie ein riesiges Schild in den Garten stellen. Nur siebzehn Prozent sagten Ja.","show":"1966 fragten Forscher Hausbesitzer, ob sie ein riesiges Schild in den Garten stellen. Nur 17 % sagten Ja.","scene":"sign"},
+ {"say":"Folge mal angenommen zweiundsiebzig für Psychologie, die du sofort nutzen kannst.","show":"Folge @malangenommen72 für Psychologie, die du sofort nutzen kannst.","scene":"follow"},
+ {"say":"Eine andere Gruppe sollte zwei Wochen vorher nur einen winzigen Aufkleber annehmen. Von ihnen sagten danach sechsundsiebzig Prozent Ja.","show":"Eine andere Gruppe sollte zwei Wochen vorher nur einen winzigen Aufkleber annehmen. Von ihnen sagten danach 76 % Ja.","scene":"bars"},
+ {"say":"Das ist der Fuß-in-der-Tür-Effekt. Wer einmal Ja gesagt hat, will sich treu bleiben. Spätere Studien fanden ihn kleiner, aber er taucht immer wieder auf.","show":"Das ist der Fuß-in-der-Tür-Effekt. Wer einmal Ja gesagt hat, will sich treu bleiben. Spätere Studien fanden ihn kleiner, aber er taucht immer wieder auf.","scene":"steps"},
+ {"say":"So nutzt du es: Erst die kleine Bitte, dann die große. Speicher dir das. Denn alles beginnt mit einer kleinen Bitte.","show":"So nutzt du es: Erst die kleine Bitte, dann die große. Speicher dir das. Denn alles beginnt mit einer kleinen Bitte.","scene":"tip"}
+]
