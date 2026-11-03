@@ -20,6 +20,20 @@ sind die **Referenz-Qualität** für alle künftigen Videos.
 - Profilbild-Skripte: `branding/make_avatar_malangenommen.py`, `branding/make_avatars.py`
   (erzeugt zusätzlich eine AI72-Variante im Line-Stil, nur als Alternative).
 
+## AI72-Hausstil (ab #07) – vom Betreiber freigegeben am 2026-11-03
+
+AI72 nutzt ab #07 den **kg-Stil** (Theme `kg` in `hyperframes/build_hf.py`, Bausteine in `hyperframes/kg_lib.py`,
+Vorlage/Test `hyperframes/scenes_kg_demo.py`, Entwürfe `branding/stylelab_ai72/AI72_Stil_v3.png`):
+- Flache Formen **ohne Konturen**, Schatten mit **harter Kante** (2–3 Töne je Form, `kg_lib.shaded`).
+- Tiefes Indigo, dunkler Rand (Vignette), konzentrische Lichtringe hinter dem Hauptmotiv, Punkt-Sterne, gelbe Funkel.
+- Satte Farben: Türkis, Magenta, Orange, Gelb, Blau; Blätter-Äste vom Bildrand, Pilze/Steine/Pflanzen unten.
+- **Eigene Figur** (`kg_lib.person`, Posen `wave`/`point`): runder Kopf, rosa Haut, große lila Haare, kleine Punktaugen,
+  Wangenröte, türkiser Hoodie. Hand = Fäustling-Form (`kg_lib.hand`).
+- Titel kursiv 900 + Unterzeile „— AI72 ERKLÄRT —“; Untertitel weiß mit dunklem Schatten, Schlüsselwort gelb.
+- **Keine Vögel, keine Ente, keine Kurzgesagt-Figuren/Logos** – nur der Stil ist Vorbild.
+- Profilbild AI72: `branding/AI72_Profil_KG.png` (ersetzt die alten AI72-Profilbilder).
+- malangenommen72 bleibt unverändert im Dark-Stil.
+
 ## Render-Werkzeug
 
 Ab #05: **HyperFrames-Pipeline** – siehe `hyperframes/README.md`. Die Pillow-Engine (`engine/`) bleibt als Fallback.

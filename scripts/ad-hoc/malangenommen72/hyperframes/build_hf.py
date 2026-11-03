@@ -17,6 +17,7 @@ import wave as _w
 with _w.open(f"{EPD}/full_voice.wav") as _f: VODUR = round(_f.getnframes() / _f.getframerate(), 3)
 W, H = 1080, 1920
 LINE = STYLE == "line"
+KG = STYLE == "kg"   # AI72 house style (stylelab v3)
 CHANNEL = "MAL ANGENOMMEN" if LINE else "AI72"
 
 os.makedirs(f"{PRJ}/compositions", exist_ok=True); os.makedirs(f"{PRJ}/assets/sfx", exist_ok=True)
@@ -35,6 +36,8 @@ for i, ((a, b), l) in enumerate(zip(segs, lines)):
     end = round(segs[i + 1][0], 3) if i + 1 < len(segs) else TOTAL
     dur = round(end - start, 3)
     lead = round(a - start, 3)            # when the voice line starts inside the scene
+    if KG:
+        import kg_lib; kg_lib.PREFIX = f"{sid}_"
     html, js = sc.SCENES[l["scene"]](sid, dur, lead)
     title = sc.TITLES.get(l["scene"])
     title_html = f'<div id="{sid}-title" class="title">{title}</div>' if title else ""
@@ -92,6 +95,10 @@ if LINE:
                "visibility:hidden;opacity:0;padding:0 80px;line-height:1.15;overflow:visible}"
                ".cg .key{background:#fff;color:#000;padding:0 12px}"
                ".cg .w:not(.key){-webkit-text-stroke:10px #000;paint-order:stroke fill}")
+elif KG:
+    cap_css = (".cg{position:absolute;left:0;right:0;top:1170px;text-align:center;font-family:var(--font-display);font-weight:900;font-size:74px;color:#fff;"
+               "visibility:hidden;opacity:0;padding:0 80px;line-height:1.15;overflow:visible;text-shadow:0 5px 0 #1b0f3d}"
+               ".cg .key{color:#ffd23f}")
 else:
     cap_css = (".cg{position:absolute;left:0;right:0;top:1150px;text-align:center;font-family:var(--font-display);font-weight:900;font-size:78px;color:#fff;"
                "visibility:hidden;opacity:0;padding:0 80px;line-height:1.15;overflow:visible;-webkit-text-stroke:12px #0a0f24;paint-order:stroke fill}"
@@ -131,6 +138,13 @@ if LINE:
                '<div class="mark" style="right:40px;top:180px;border-right-width:3px;border-top-width:3px"></div>'
                '<div class="mark" style="left:40px;top:1290px;border-left-width:3px;border-bottom-width:3px"></div>'
                '<div class="mark" style="right:40px;top:1290px;border-right-width:3px;border-bottom-width:3px"></div>')
+elif KG:
+    import kg_lib; kg_lib.PREFIX = "bg_"
+    bg_css = """#bg{position:absolute;inset:0}
+      #stamp{position:absolute;left:0;right:0;top:186px;text-align:center}
+      #stamp span{font-family:var(--font-display);font-weight:900;font-size:30px;color:#1b0f3d;background:#ffd23f;border-radius:30px;padding:8px 24px}"""
+    bg_html = ('<svg id="bg" width="1080" height="1920" viewBox="0 0 1080 1920">' + kg_lib.background(3, (540, 780))
+               + kg_lib.ground(1150) + kg_lib.ground_deco(1560) + '</svg>')
 else:
     bg_css = """#bg{position:absolute;inset:0;background:linear-gradient(180deg,#0c1636 0%,#16285c 100%)}
       #bg i{position:absolute;border-radius:50%;background:#fff;opacity:.7}
