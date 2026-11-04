@@ -153,6 +153,7 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | 08 | Rätsel: Warum sind Gullydeckel rund? (AI72) | kg + Rätsel, HyperFrames |
 | 09 | Fuß-in-der-Tür (malangenommen72) | Dark v2, HyperFrames |
 | 09 | Rätsel: Warum schwimmt Eis? (AI72) | kg + Rätsel, HyperFrames |
+| 10 | Innen sind wir uns ähnlicher – gegen Rassismus (malangenommen72) | Dark v2, HyperFrames |
 | – | Türschwellen-Effekt | vom Betreiber selbst schon gemacht |
 
 ## Kanal-Befund (Stand 2026-11-01)
