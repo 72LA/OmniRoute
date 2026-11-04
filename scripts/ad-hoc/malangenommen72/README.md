@@ -52,6 +52,11 @@ Vorlage/Test `hyperframes/scenes_kg_demo.py`, Entwürfe `branding/stylelab_ai72/
 
 Ab #05: **HyperFrames-Pipeline** – siehe `hyperframes/README.md`. Die Pillow-Engine (`engine/`) bleibt als Fallback.
 
+## Referenzbilder
+
+Die Original-Screenshots (Stilvorbilder, PsychoLogisch, TikTok-Tipps, Rätsel-Video) liegen bewusst **nicht** im Repo
+(fremdes Material). Der Betreiber hat sie als `Referenzen.zip`. Für eine neue Sitzung bei Bedarf erneut hochladen.
+
 ## Reichweiten-Regeln (seit 2026-11-03, aus Betreiber-Referenzen)
 
 **Vollständiges Playbook + Pflicht-Checkliste pro Video: `REICHWEITE.md` – vor jeder Produktion lesen und abhaken.**
