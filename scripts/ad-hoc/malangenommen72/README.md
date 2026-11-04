@@ -59,6 +59,15 @@ Die Original-Screenshots (Stilvorbilder, PsychoLogisch, TikTok-Tipps, Rätsel-Vi
 
 ## Reichweiten-Regeln (seit 2026-11-03, aus Betreiber-Referenzen)
 
+**AI72 ab #11 (Betreiber-Regel 2026-11-04): keine Rätsel mehr.** Reguläres Wissens-Format mit **Frage als Hook**
+(„Warum …?“ / „Was passiert, wenn …?“), nach dem TikTok-Hinweis „hilfreicher Beitrag“: echte Details/Quelle,
+ehrliche Einordnung, **umsetzbarer Tipp am Ende** („So nutzt du das“), Speicher-Aufruf, Follow-Aufruf in der Mitte
+(„Folge AI72 für Wissen, das dir hilft“). Kein Countdown, keine Rätselkarte, kein „Schreib die Lösung“.
+
+**Captions (Betreiber-Regel 2026-11-04):** passend zum Video, **kein Kanalname** (weder Text noch Hashtag),
+**genau 5 Hashtags**, im Chat **je Video in einem eigenen Codeblock** (Caption + Hashtags zusammen), damit der
+Betreiber mit einem Klick auf „Kopieren“ alles übernimmt. Zusätzlich in der Textdatei.
+
 **Vollständiges Playbook + Pflicht-Checkliste pro Video: `REICHWEITE.md` – vor jeder Produktion lesen und abhaken.**
 
 Quellen: TikTok-Hinweis „So erstellt man einen hilfreichen Beitrag“, Kanal PsychoLogisch, Rätsel-Video von EndzeitAkten.
@@ -66,7 +75,7 @@ Quellen: TikTok-Hinweis „So erstellt man einen hilfreichen Beitrag“, Kanal P
   echte Studien/Details nennen; ehrliche Einordnung; Caption **> 50 Zeichen** mit Kern-Erkenntnis (nicht nur Emojis).
 - **malangenommen72** (Dark v2 bleibt): PsychoLogisch-Formel übernehmen, eigener Inhalt: ein konkreter Trick / ein Wort,
   **Vorher→Nachher-Zahl** (z. B. „60 % → 93 %“), dann „So nutzt du es“-Checkliste. Format bleibt „Mal angenommen …“.
-- **AI72: jedes Video enthält ein Rätsel** (Format EndzeitAkten, eigene Rätsel): Rätselkarte oben → Frage →
+- ~~AI72: jedes Video enthält ein Rätsel~~ **AUFGEHOBEN 2026-11-04 (ab AI72 #11 keine Rätsel mehr)** – früher: (Format EndzeitAkten, eigene Rätsel): Rätselkarte oben → Frage →
   Countdown „Schreib deine Antwort in die Kommentare, bevor du weiterschaust“ → Follow-Aufruf („jedes Mal ein neues Rätsel“)
   → Lösung mit Wissens-Erklärung → Bonus-Fakt → „Schick's jemandem, der es nicht lösen kann“.
   Rätsel müssen eine **belegbare Wissens-Lösung** haben (kein Copy fremder Rätsel-Videos).

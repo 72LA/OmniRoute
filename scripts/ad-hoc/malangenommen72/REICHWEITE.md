@@ -33,7 +33,7 @@ plus Web-Recherche zu Algorithmus, Retention, Analytics und TikTok-SEO. TikTok v
 ## 4. Format-Bausteine aus den Referenzen
 - **malangenommen72** (Dark v2): Titel-Formeln im Stil „1 Wort, das …“, „3 Sätze, die …“, „Mal angenommen, du …“;
   Vorher→Nachher-Zahl groß im Cover; Checkliste am Ende; Serien („Teil 1/3“) für Profil-Durchklicken und Anpinnen.
-- **AI72** (kg-Stil): **jedes Video mit Rätsel** – Rätselkarte oben (wie EndzeitAkten), 3-2-1-Countdown
+- **AI72** (kg-Stil) **ab #11: KEINE Rätsel mehr** – Frage-Hook → Erklärung mit Quelle/Zahl → Follow in der Mitte → „So nutzt du das“-Tipp → Speicher-/Share-Aufruf → Loop zur Anfangsfrage. (Alt, bis #10:) **jedes Video mit Rätsel** – Rätselkarte oben (wie EndzeitAkten), 3-2-1-Countdown
   „Antwort in die Kommentare“, dann Lösung mit Wissen + Bonus-Fakt, Schluss „Schick's jemandem, der es nicht lösen kann“.
   Rätsel-Lösung erst nach dem Follow-Aufruf (hält Zuschauer über die Mitte).
 - **Einheitliches Cover-Raster** je Kanal (gleiche Position/Größe der Titelzeile) → Profil wirkt wie eine Serie.
