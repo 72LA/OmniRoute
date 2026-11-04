@@ -79,7 +79,8 @@ Quellen: TikTok-Hinweis „So erstellt man einen hilfreichen Beitrag“, Kanal P
   Abschluss mit Frage / Teil-Aufruf.
 - Länge **35–45 s** (seit 2026-11-02, verbindlich; Skript auf ~95–125 Wörter auslegen), 9:16 (1080×1920), Untertitel eingebrannt, keine Musik (die fügt der Betreiber in der
   TikTok-App hinzu, privates Konto).
-- Pro Video: Caption + **max. 5 Hashtags** (immer der Kanal-Hashtag `#malangenommen72` bzw. `#ai72`), Quellen nur für den Betreiber.
+- Pro Video: TikTok-Caption + **genau 5 Hashtags**, **ohne Kanalnamen** (kein `#malangenommen72`/`#ai72`, Kanalname auch nicht im Caption-Text) – Betreiber-Regel seit 2026-11-04. Quellen nur für den Betreiber.
+- Ablauf: Captions + Hashtags für beide Videos immer mitliefern und zusätzlich direkt im Chat schicken. Videos nur nach „Go“.
 - Nur echte, geprüfte Fakten; Unsicherheit sprachlich kennzeichnen („meistens“, „etwa“, „in einer Studie“).
 - Themen nicht wiederholen, Formulierungen variieren. Bevorzugt: Wiedererkennung, Diskussion, Teilbarkeit.
 - Stempel „MAL ANGENOMMEN #NN“ unter den Untertiteln, Nummer fortlaufend.

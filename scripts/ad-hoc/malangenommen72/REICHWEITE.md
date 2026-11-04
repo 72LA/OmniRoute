@@ -28,7 +28,7 @@ plus Web-Recherche zu Algorithmus, Retention, Analytics und TikTok-SEO. TikTok v
 - Caption **beginnt mit der Suchphrase**, wie Leute tippen: „Warum sind Gullydeckel rund? …“ / „Psychologie-Trick: …“.
 - Caption **> 50 Zeichen, ideal 150–300**, mit Kern-Erkenntnis + Quelle in Kurzform + Speicher-/Share-Aufruf.
 - Dasselbe Keyword in **Sprache, eingebranntem Text, Caption und 1 Hashtag** (TikTok liest Text per OCR und Ton).
-- **3–5 Hashtags**: 1 breit (#psychologie / #wissen), 1–2 Nische (#denksport, #kommunikation), Kanal-Tag.
+- **Genau 5 Hashtags**: 1 breit (#psychologie / #wissen), 3–4 Nische/Keyword (#denksport, #kommunikation). **Kein Kanal-Tag, kein Kanalname** (Betreiber-Regel 2026-11-04).
 
 ## 4. Format-Bausteine aus den Referenzen
 - **malangenommen72** (Dark v2): Titel-Formeln im Stil „1 Wort, das …“, „3 Sätze, die …“, „Mal angenommen, du …“;
