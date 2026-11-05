@@ -69,6 +69,8 @@ ehrliche Einordnung, **umsetzbarer Tipp am Ende** („So nutzt du das“), Speic
 Betreiber mit einem Klick auf „Kopieren“ alles übernimmt. Zusätzlich in der Textdatei.
 
 **Vollständiges Playbook + Pflicht-Checkliste pro Video: `REICHWEITE.md` – vor jeder Produktion lesen und abhaken.**
+**Agentur-Ablauf (11 Abteilungen mit Gates, Posting-Checkliste, Referenzanalyse): `AGENTUR.md` – ab 2026-11-05 verbindlich.**
+**AI72 ab #11: Serie „MYTHOS-CHECK“** (Alltagsmythos als Frage → Studie → ehrliche Grenzen → Alltagstipp), Vorlage `hyperframes/scenes_knacken.py`.
 
 Quellen: TikTok-Hinweis „So erstellt man einen hilfreichen Beitrag“, Kanal PsychoLogisch, Rätsel-Video von EndzeitAkten.
 - **Hilfreich = mehr Reichweite:** jedes Video endet mit einem **konkreten, umsetzbaren Tipp** („Probier es heute aus …“);
@@ -171,6 +173,9 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | 10 | Innen sind wir uns ähnlicher – gegen Rassismus (malangenommen72) | Dark v2, HyperFrames |
 | 11 | Macht eine Million glücklicher? Lotto-Studie / hedonische Anpassung (malangenommen72) | Dark v2, HyperFrames |
 | 10 | Rätsel: Warum ist der Flug NY → London kürzer? Jetstream (AI72) | kg + Rätsel, HyperFrames |
+| 12 | Motivation bringt fast nichts – Wenn-dann-Plan 38 → 91 % (malangenommen72) | Dark v2 + native Textbox |
+| 11 | Mythos-Check: Macht Fingerknacken Arthrose? (AI72) | kg, Mythos-Check |
+| – | 8 Gläser Wasser am Tag? (vom Betreiber gepostet, geboostet) | Neon |
 | – | Türschwellen-Effekt | vom Betreiber selbst schon gemacht |
 
 ## Kanal-Befund (Stand 2026-11-01)
