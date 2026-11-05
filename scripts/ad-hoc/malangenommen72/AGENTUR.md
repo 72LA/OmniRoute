@@ -39,7 +39,9 @@ Jede Produktion durchläuft **alle Abteilungen nacheinander**. Jede Abteilung ha
 | **Strix – „Jede psychische Störung erklärt“** | 14.441 Likes · 3.530 Saves (24 %) · 2.204 Shares | Liste/Serie, 1 Maskottchen pro Punkt, Suchwort im Titel, Nachschlage-Wert → Saves | Format „Jede/r X erklärt“ als Mehrteiler (Teil 1/3) einplanen |
 | **cryothum – Sparschwein an Kette** | 60.947 Likes · 15.566 Saves (26 %) · 4.498 Shares | Dark-Line-Art (= unser Dark v2), Contrarian-Satz in nativer Textbox, Geld/Mindset, Caption 1 Satz + 5 Hashtags | **Native Textbox im Cover**, Contrarian-Hooks („Motivation bringt fast nichts“) |
 | **EndzeitAkten – Aufzug-Rätsel** | 13.118 Likes · 2.097 Saves · 2.002 Shares | Frage-Karte oben, Kommentar-Antworten | AI72-Rätsel beendet (Betreiber); Frage-Karte oben bleibt |
-| **LiebesQuiz – „Wer würde eher …?“** | 24.087 Likes · 724 Komm. · 7.906 Saves · **23.517 Shares (≈ 98 % der Likes)** | Mitmach-Frage, 3-2-1-Countdown, Partner markieren → extrem teilbar | **Share-Persona** statt „teile das“ („Schick's dem ‚Ab Montag‘-Typ“), Kommentar-Mitmachfragen |
 
 Muster: **Saves** kommen von Nachschlage-Wissen (Listen, Zahlen, Anleitungen), **Shares** von einer konkreten
-Person, an die man denkt. Jedes Video braucht beides: einen Grund zum Speichern und einen Menschen zum Schicken.
+Person, an die man denkt (Share-Persona, Regel aus `REICHWEITE.md`).
+
+**Ausgeschlossen (Betreiber 2026-11-05):** Das „Wer würde eher …?“-Paar-Quiz (LiebesQuiz) ist **keine** Referenz –
+nicht analysieren, nicht übernehmen. Jedes Video braucht beides: einen Grund zum Speichern und einen Menschen zum Schicken.
