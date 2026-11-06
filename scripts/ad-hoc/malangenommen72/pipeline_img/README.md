@@ -12,3 +12,11 @@
    Follow-Pille, Loop-Box am Ende, **ein großes Wort pro Moment** (Anton, Schlüsselwörter hervorgehoben), Zahlen-Overlays.
    Schrift `fonts/Anton-Regular.ttf` (OFL, Google Fonts) liegt im Arbeitsordner `hf/fonts/`.
 4. lint → snapshot → render → loudnorm wie gehabt.
+
+## Erfahrungen (2026-11-06)
+- Dunkler Stil (A) mit Juggernaut XL: 11/11 Bilder gut. Vivid (B): Gruppen-/Objekt-Motive liefen oft als **Musterflächen** aus
+  (bestimmte Rechner, z. B. „dumbstupid_SDXL*“, „gn100-oxygen-janken“, „Neon_Nexus*“). `horde_batch.py` prüft jetzt jedes Bild
+  (Anteil glatter Fläche < 0,6 = Müll → löschen, Rechner sperren, neu). Gute Illustrationen liegen bei 0,72–0,95.
+- „Nova Flat XL“ wurde komplett zensiert (unbrauchbar). AlbedoBase XL 3.1 ebenfalls Müll-anfällig.
+- Vivid-Prompts immer mit der AI72-Figur beschreiben (Einzelfigur funktioniert, Gruppen/Gehirn/Wissenschaftler nicht) → Motive so planen.
+- Plan B: gute Bilder mehrfach nutzen (andere Kamerafahrt + Zahlen-Overlay), wie in AI72 #13.

@@ -22,16 +22,16 @@ def bars(p, dur):
 BEATS = [
     {"img": "b01", "move": "push"},
     {"img": "b02", "at": (0, 7), "move": "push", "flash": True},
-    {"img": "b03", "at": (1, 0), "move": "pan-r", "flash": True},
-    {"img": "b04", "at": (1, 3), "move": "push", "ov": big([("55 %", 470, 230, "#ffd23f"), ("GÄHNTEN MIT", 730, 70, "#fff")])},
-    {"img": "b03", "at": (1, 12), "move": "pull", "ov": bars},
+    {"img": "b06", "at": (1, 0), "move": "pan-r", "flash": True},
+    {"img": "b02", "at": (1, 3), "move": "pull", "ov": big([("55 %", 470, 230, "#ffd23f"), ("GÄHNTEN MIT", 730, 70, "#fff")])},
+    {"img": "b01", "at": (1, 12), "move": "pull", "ov": bars},
     {"img": "b05", "at": (2, 0), "move": "push", "flash": True},
     {"img": "b06", "at": (2, 4), "move": "push"},
-    {"img": "b07", "at": (3, 0), "move": "push", "flash": True},
-    {"img": "b08", "at": (3, 6), "move": "pan-l"},
-    {"img": "b09", "at": (3, 11), "move": "push", "ov": big([("0", 450, 260, "#2ad4c0"), ("GÄHNTEN MIT", 740, 70, "#fff")])},
+    {"img": "b08", "at": (3, 0), "move": "push", "flash": True},
+    {"img": "b08", "at": (3, 6), "move": "up"},
+    {"img": "b01", "at": (3, 11), "move": "push", "ov": big([("0", 450, 260, "#2ad4c0"), ("GÄHNTEN MIT", 740, 70, "#fff")])},
     {"img": "b10", "at": (4, 0), "move": "push", "flash": True},
-    {"img": "b11", "at": (4, 7), "move": "pan-r"},
+    {"img": "b06", "at": (4, 7), "move": "pan-r"},
     {"img": "b01", "at": (4, 11), "move": "pull"},
 ]
 KEYS = {"gähnen", "gähnen?", "gähnst", "hälfte", "fünfte", "lesen", "jetzt", "kühlt", "gehirn", "nase", "gegähnt", "kommentare", "testen"}

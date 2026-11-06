@@ -191,6 +191,8 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | 12 | Mythos-Check #2: Hilft Vitamin C gegen Erkältung? (AI72) | kg, Mythos-Check + Kamerafahrt |
 | – | Türschwellen-Effekt | vom Betreiber selbst schon gemacht |
 | – | Warum zuckst du beim Einschlafen? | schon verwendet (Betreiber 2026-11-06) |
+| 14 | Warum denkst du nachts an peinliche Momente? (malangenommen72) | Bild-Pipeline dunkel |
+| 13 | Warum musst du gähnen, wenn andere gähnen? (AI72) | Bild-Pipeline vivid |
 
 ## Kanal-Befund (Stand 2026-11-01)
 
