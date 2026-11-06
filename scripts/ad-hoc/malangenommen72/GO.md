@@ -88,4 +88,5 @@ Was die Qualität ausmacht und wie wir es umsetzen:
 6. **Zahlen als Spektakel**: große Zahl + Masse-Visualisierung (z. B. 22.000 Figuren-Raster, Scan-Linie, Markierungskreise).
 7. **Hook = Widerspruch über dich** („Spät ins Bett ist nicht dein Problem.“) – deckt sich mit „Warum du …?“-Regel.
 Format bleibt 9:16 (TikTok-Vollbild). Stile Dark v2 / kg bleiben erkennbar, werden aber nach Punkt 1–6 aufgewertet.
-Grenze: alles per Code gezeichnet (SVG/GSAP), keine KI-Bilder – Detailgrad einer Illustrator-Grafik nur annähernd.
+**Umsetzung ab #14: Bild-Pipeline** (`pipeline_img/README.md`) – KI-Illustrationen via Stable Horde (kostenlos) + HyperFrames-Animation.
+Das ist ab jetzt der Standard für beide Kanäle; die alten SVG-Szenen bleiben nur Reserve.
