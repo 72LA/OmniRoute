@@ -57,6 +57,9 @@ Ab #05: **HyperFrames-Pipeline** – siehe `hyperframes/README.md`. Die Pillow-E
 Die Original-Screenshots (Stilvorbilder, PsychoLogisch, TikTok-Tipps, Rätsel-Video) liegen bewusst **nicht** im Repo
 (fremdes Material). Der Betreiber hat sie als `Referenzen.zip`. Für eine neue Sitzung bei Bedarf erneut hochladen.
 
+**Lieferung im Chat (Betreiber-Regel 2026-11-06): nur noch kurz** – Video 1 + Caption-Kopierblock, Video 2 + Caption-Kopierblock.
+Keine langen Erklärungen, Quellen nur in der Textdatei.
+
 ## Reichweiten-Regeln (seit 2026-11-03, aus Betreiber-Referenzen)
 
 **AI72 ab #11 (Betreiber-Regel 2026-11-04): keine Rätsel mehr.** Reguläres Wissens-Format mit **Frage als Hook**
