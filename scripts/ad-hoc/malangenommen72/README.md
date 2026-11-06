@@ -1,5 +1,7 @@
 # AI72 (ehem. malangenommen72) – Video-Studio (TikTok)
 
+> **Bei „Go“: zuerst `GO.md` lesen – verbindlicher Ablauf (Mix aus alten + neuen Regeln). Bei Widerspruch gilt GO.md.**
+
 Produktionspaket für den TikTok-Kanal **@malangenommen72** (Psychologie, Wissen, „Wusstest du?“).
 Nicht Teil von OmniRoute – reines Ad-hoc-Werkzeug. Freigegeben vom Kanal-Betreiber: Videos #03 und #04
 sind die **Referenz-Qualität** für alle künftigen Videos.
