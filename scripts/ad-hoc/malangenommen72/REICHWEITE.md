@@ -66,3 +66,15 @@ war 18,7 s. (2) Einstieg zu langsam/gleichförmig („MAL ANGENOMMEN …“-Tite
 „Psychologie“), malangenommen72-Bio verspricht „15 Sekunden“. (5) Kein Trend-Sound.
 Gegenmaßnahmen: A/B-Test kurz (20–28 s) vs. lang; Satz 1 = Behauptung in < 1 s, Bewegung ab Frame 0;
 Bios trennen; Loop-Ende; eine leichte Kommentarfrage; Trend-Sound leise.
+
+## 8. Studio-Daten 29.10.–04.11.2026 (Betreiber-Screenshots)
+| Kanal | Aufrufe | Likes | Komm. | Shares | Profil | Für dich | Suche |
+|---|---|---|---|---|---|---|---|
+| AI72 | 11,4K | 491 (4,3 %) | 17 | 14 (0,12 %) | 47 (0,4 %) | 99,1 % | 0,1 % („kitzeln“ 35 %) |
+| malangenommen72 | 12,5K | 894 (7,2 %) | 8 | 39 (0,31 %) | 34 (0,3 %) | 98,8 % | 0,2 % („immer zu spät“) |
+Top-Videos malangenommen72: alle „Warum DU …?“-Alltagsfragen (zu spät, schneller gehen, Echo, Lachen im Ernst).
+Likes/Tag fielen ab 02.11. von ~160–200 auf ~70.
+**Folgerung:** Engpass ist Teilen + Profil-Neugier, nicht der Stil. Gewinner-Rahmung = „Warum du …?“ über eigenes
+Verhalten (wiedererkennbar → teilbar + suchbar). Studie nur als Beweis, nicht als Überschrift.
+**Regel ab sofort:** Titel/Hook/Caption = Suchphrase „Warum [du] …?“; Share-Persona aus dem Thema selbst
+(„schick's dem, der immer …“); 20–28 s; Serie + offener Faden zum nächsten Teil.
