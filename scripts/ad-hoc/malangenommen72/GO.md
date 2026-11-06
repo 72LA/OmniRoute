@@ -5,6 +5,7 @@ Diese Datei ist die **eine Quelle** für jede Produktion. Sie vereint alte Regel
 Studio-Auswertung (REICHWEITE.md §7–8). Details: README.md (Technik/Stil), AGENTUR.md (Abteilungen), IDEEN.md (Themen).
 
 ## 0. Ohne „Go“ nichts produzieren
+**Keine Rätsel mehr – auf keinem Kanal** (Betreiber 2026-11-06: kommen schlecht an). Kein Rätselkarten-, Countdown- oder Lösungs-Format.
 „Go“ = **2 Videos**: 1× malangenommen72, 1× AI72 (außer Betreiber sagt anders). Thema: nächste Freigabe aus IDEEN.md.
 
 ## 1. Kanal-Profile (getrennt halten)
@@ -61,8 +62,10 @@ Primärquelle oder ≥ 2 unabhängige Quellen per Websuche prüfen. Unsicherheit
 Beginnt mit der Suchphrase; 150–250 Zeichen; Kernzahl + Nutzen + Share-Persona; **genau 5 Hashtags, kein Kanalname**.
 Dazu Anpinn-Kommentar (leichte Frage). Alles in Textdatei `VideoNN_Captions.txt` inkl. Quellen.
 
-## 8. Lieferung im Chat – KURZ
-Nur: **Video 1 + Caption-Kopierblock, Video 2 + Caption-Kopierblock** (+ Anpinn-Kommentar im selben Block). Keine langen Texte.
+## 8. Lieferung im Chat – KURZ (Betreiber-Regel 2026-11-06)
+Pro Video: **erst das Video senden (eigene Datei-Karte), direkt darunter genau EIN Kopierblock = Caption + 5 Hashtags.**
+Reihenfolge: Video malangenommen72 → dessen Caption, Video AI72 → dessen Caption. Keine weiteren Blöcke, keine Erklärtexte,
+kein Anpinn-Kommentar im Chat (der steht nur in der Textdatei).
 
 ## 9. Posting-Hinweise (stehen in AGENTUR.md, nur bei Änderungen erwähnen)
 Titelbild = Frame 0 · „KI-generierter Inhalt“ an · Trend-Sound leise · Kommentar anpinnen · 1. Stunde antworten ·
