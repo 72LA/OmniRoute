@@ -1,0 +1,7 @@
+[
+ {"say":"Warum machst du so selten Komplimente? Weil dein Kopf dich anlügt.","show":"Warum machst du so selten Komplimente? Weil dein Kopf dich anlügt.","scene":"hook"},
+ {"say":"In neun Experimenten unterschätzten Menschen jedes Mal, wie sehr ein Kompliment freut.","show":"In 9 Experimenten unterschätzten Menschen jedes Mal, wie sehr ein Kompliment freut.","scene":"study"},
+ {"say":"Und sie überschätzten, wie peinlich es wird.","show":"Und sie überschätzten, wie peinlich es wird.","scene":"awk"},
+ {"say":"Genau das hält uns zurück. Dabei hebt es die Stimmung des anderen.","show":"Genau das hält uns zurück. Dabei hebt es die Stimmung des anderen.","scene":"mood"},
+ {"say":"Also sag heute einer Person, was du an ihr magst. Und schick das der Person, an die du gerade denkst.","show":"Also sag heute einer Person, was du an ihr magst. Und schick das der Person, an die du gerade denkst.","scene":"tip"}
+]

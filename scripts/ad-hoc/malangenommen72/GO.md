@@ -96,3 +96,12 @@ Zurück zum **alten Stil** (selbst gezeichnete SVG-Szenen: Dark v2 für malangen
 - Zahlen größer inszenieren (Hochzählen, Ringe, Balken)
 - Untertitel wie bisher (Zeilen unten), Schlüsselwort hervorgehoben
 Keine KI-Bilder, kein OpenArt/Stable Horde. `pipeline_img/` nur noch als Archiv.
+
+
+## 12. Sound sauber (Betreiber 2026-11-06)
+- Stimme nach `assemble.py` immer durch `hyperframes/clean_voice.sh <ep>`: Hochpass 75 Hz, Tiefpass 13,5 kHz, De-Esser, −1,5 dB @250 Hz,
+  +1,5 dB @3,2 kHz (Präsenz), Kompressor 2,5:1, Limiter. Danach Build, Render, loudnorm −14 LUFS wie gehabt.
+- SFX sparsam und leise (0,12–0,18): nur `click-soft`, `pop`, `whoosh-short`, `sparkle`, `chime`; keine Bass-Impacts, Glitches, Riser.
+  Max. ~1 SFX pro Bildbeat, nie über der Stimme dominant.
+- Bild-Upgrade im alten Stil: `FX = True` im Szenenmodul → Partikel + weicher Licht-Sweep bei jedem Szenenwechsel (`build_hf.py`),
+  Kamerafahrt via `S(p, inner, dur)` aus `scenes_peakend.py` (Dark) bzw. `scenes_vitc.py` (kg), Unter-Beats je Szene, Follow-Pille als Einblendung.

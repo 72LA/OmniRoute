@@ -193,6 +193,8 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | – | Warum zuckst du beim Einschlafen? | schon verwendet (Betreiber 2026-11-06) |
 | 14 | Warum denkst du nachts an peinliche Momente? (malangenommen72) | Bild-Pipeline dunkel |
 | – | Gähnen (AI72) | VERWORFEN + gesperrt (Betreiber 2026-11-06) |
+| 15 | Warum machst du so selten Komplimente? (malangenommen72) | Dark v2 aufgewertet, sauberer Sound |
+| 14 | Mythos-Check #3: Frieren Frauen wirklich schneller? (AI72) | kg aufgewertet, sauberer Sound |
 
 ## Kanal-Befund (Stand 2026-11-01)
 

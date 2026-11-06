@@ -131,6 +131,35 @@ for k, (name, si, off, vol) in enumerate(sc.SFX):
     fd = round(min(fd, TOTAL - t), 3)
     sfx_tags.append(f'<audio id="fx{k}" class="clip" src="assets/sfx/{name}.mp3" data-start="{t}" data-duration="{fd}" data-track-index="{10 + k}" data-volume="{vol}"></audio>')
 
+
+# ---------------- fx: particles + soft light sweep between scenes (opt-in: sc.FX = True) ----------------
+fx_host = ""
+if getattr(sc, "FX", False):
+    import random as _r
+    _r.seed(11); pc = "#ffffff" if LINE else "#ffe27a"
+    parts = "".join(f'<i class="pt" style="left:{_r.randint(0,1070)}px;top:{_r.randint(240,1700)}px;width:{s}px;height:{s}px;opacity:{_r.uniform(.15,.45):.2f}"></i>'
+                    for s in [_r.choice([3, 4, 5, 6]) for _ in range(38)])
+    sweep_js = "".join(f'tl.fromTo("#sw", {{x: -1400, opacity: 0.55}}, {{x: 1400, opacity: 0.55, duration: 0.42, ease: "power2.inOut"}}, {round(max(0, segs[i][0] - 0.22), 3)});'
+                       for i in range(1, len(segs)))
+    open(f"{PRJ}/compositions/fx.html", "w").write(f"""<template>
+  <style>
+    #root {{ position: absolute; inset: 0; pointer-events: none; }}
+    .pt {{ position: absolute; border-radius: 50%; background: {pc}; box-shadow: 0 0 8px {pc}; }}
+    #sw {{ position: absolute; top: 0; left: 0; width: 700px; height: 1920px; opacity: 0;
+           background: linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.16) 45%, rgba(255,255,255,.32) 50%, rgba(255,255,255,.16) 55%, rgba(255,255,255,0) 100%); }}
+  </style>
+  <div id="root" data-composition-id="fx" data-width="{W}" data-height="{H}">{parts}<div id="sw"></div></div>
+  <script>
+    const tl = gsap.timeline({{ paused: true }});
+    tl.set("#sw", {{opacity: 0}}, 0);
+    tl.fromTo(".pt", {{y: 0}}, {{y: -220, duration: {TOTAL}, ease: "none", stagger: {{each: 0.04, from: "random"}}}}, 0);
+    {sweep_js}
+    window.__timelines["fx"] = tl;
+  </script>
+</template>
+""")
+    fx_host = f'<div id="fx" data-composition-id="fx" data-composition-src="compositions/fx.html" data-start="0" data-duration="{TOTAL}" data-track-index="3" data-track-kind="graphics" data-width="{W}" data-height="{H}"></div>'
+
 # ---------------- background + stamp ----------------
 if DARK2:
     import dark2_lib
@@ -191,6 +220,7 @@ index = f"""<!doctype html>
       {bg_html}
       <div id="stamp" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="0"><span>{CHANNEL} #{EP}</span></div>
       {chr(10).join(hosts)}
+      {fx_host}
       <div id="caps" data-composition-id="caps" data-composition-src="compositions/caps.html" data-start="0" data-duration="{TOTAL}" data-track-index="2" data-track-kind="captions" data-width="{W}" data-height="{H}"></div>
       <audio id="vo" class="clip" src="assets/voice.wav" data-start="0" data-duration="{VODUR}" data-track-index="5" data-volume="1"></audio>
       {chr(10).join(sfx_tags)}
