@@ -88,5 +88,11 @@ Was die Qualität ausmacht und wie wir es umsetzen:
 6. **Zahlen als Spektakel**: große Zahl + Masse-Visualisierung (z. B. 22.000 Figuren-Raster, Scan-Linie, Markierungskreise).
 7. **Hook = Widerspruch über dich** („Spät ins Bett ist nicht dein Problem.“) – deckt sich mit „Warum du …?“-Regel.
 Format bleibt 9:16 (TikTok-Vollbild). Stile Dark v2 / kg bleiben erkennbar, werden aber nach Punkt 1–6 aufgewertet.
-**Umsetzung ab #14: Bild-Pipeline** (`pipeline_img/README.md`) – KI-Illustrationen via Stable Horde (kostenlos) + HyperFrames-Animation.
-Das ist ab jetzt der Standard für beide Kanäle; die alten SVG-Szenen bleiben nur Reserve.
+**BETREIBER-ENTSCHEIDUNG 2026-11-06: KI-Bild-Pipeline VERWORFEN** (gefällt nicht; AI72 #13 Gähnen verworfen).
+Zurück zum **alten Stil** (selbst gezeichnete SVG-Szenen: Dark v2 für malangenommen72, kg-Stil für AI72), aber **maßvoll aufgewertet**:
+- mehr Bildwechsel: jede Szene in 2–3 Unter-Beats (neues Objekt, Zoom, Perspektive) → Wechsel alle ~2 s
+- Kamerafahrt je Szene bleibt; dazu kurze Licht-/Wisch-Übergänge zwischen Szenen
+- mehr Licht/Tiefe im eigenen Stil: Glow, weiche Lichtkegel, Partikel, Vorder-/Hintergrund-Ebenen
+- Zahlen größer inszenieren (Hochzählen, Ringe, Balken)
+- Untertitel wie bisher (Zeilen unten), Schlüsselwort hervorgehoben
+Keine KI-Bilder, kein OpenArt/Stable Horde. `pipeline_img/` nur noch als Archiv.

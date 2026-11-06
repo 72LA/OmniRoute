@@ -1,3 +1,5 @@
+> **VERWORFEN (Betreiber 2026-11-06)** – nur Archiv, nicht mehr verwenden.
+
 # Bild-Pipeline (ab #14 / AI72 #13) – I-Mind-Niveau mit kostenlosen Werkzeugen
 
 1. **Bilder**: `horde_batch.py prompts.json outdir 6` – Stable Horde (kostenlos, anonymer Key `0000000000`),
