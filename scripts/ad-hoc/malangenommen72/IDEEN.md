@@ -41,5 +41,7 @@ Alle Fakten sind **vor der Produktion erneut zu prüfen** (Primärquelle). ⭐ =
 
 ## Nächste Runde (Betreiber-Freigabe 2026-11-06, Produktion erst bei „Go“)
 - malangenommen72: „Warum denkst du nachts an peinliche Momente von vor 10 Jahren?“ (Alternative: „Warum läufst du beim Telefonieren herum?“)
-- AI72: „Warum musst du gähnen, wenn andere gähnen?“
+- ~~AI72: „Warum musst du gähnen, wenn andere gähnen?“~~ GESPERRT (Betreiber 2026-11-06: kein Gähnen mehr)
 - GESPERRT: „Warum zuckst du beim Einschlafen?“ – schon verwendet.
+
+- AI72 nächstes Thema (Vorschlag, Freigabe offen): „Frieren Frauen wirklich schneller?“ (Mythos-Check, Bürotemperatur)
