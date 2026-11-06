@@ -86,3 +86,16 @@ nicht am Gesicht. Bewährt: Pattern-Interrupts (schnelle Schnitte, SFX, Zoom-ins
 bunte Visuals + klare Stimme). Ohne Gesicht muss der Hook mehr leisten → Widerspruch/„Warum du …?“ in Sek. 0–2.
 Konsequenz: Bild-Pipeline + Einzelwort-Untertitel + Blitzschnitte (GO.md §11) beibehalten; Figur muss über alle
 Bilder **identisch** sein (AI72-Maskottchen als Referenzbild, OpenArt Kling 3 Omni „series“).
+
+## 10. Warum der Deckel bei 700–800 bleibt – Zusammenfassung + Maßnahmen (2026-11-06)
+Belegt (Studio): 99 % „Für dich“, ~0 % Follower/Suche/Profil; Likes ok (4–7 %), Shares 0,1–0,3 %, Profil 0,3–0,4 %.
+Alle Videos (alt wie neu, jeder Stil) landen bei ~800 → das ist der **erste Test-Pool**; kein Video erfüllt die
+Signale für die nächste Welle. Engpass = **Halten in Sek. 0–3 + Rewatch + Teilen**, nicht Stil/Thema.
+Fehlend für den Beweis: pro Video „Ø Wiedergabezeit“ + „% vollständig angesehen“ + Retention-Kurve (Video → Analyse).
+Maßnahmen in jedem Video (zusätzlich zu GO.md):
+1. **Nahtloser Loop**: letzter Satz endet mitten im Gedanken, der erste Satz vervollständigt ihn (z. B. „… und genau deshalb –“ → „Warum …?“) → Rewatch.
+2. **Sek. 0,0–0,5**: Bewegung + Frage im Bild sofort, Stimme startet ohne Pause, kein Titel-Einblenden.
+3. **Neugier-Lücke**: Antwort erst nach Sek. 10–12 auflösen, vorher Zahl/Teaser („Das Ergebnis: 91 %. Aber warum?“).
+4. **Share-Satz konkret** („Schick's dem, der …“) + **Kommentarfrage mit 1-Wort-Antwort**.
+5. **Länge 18–24 s** testen (kürzer = höhere Completion), 1 Video/Tag/Kanal zur gleichen Uhrzeit, nichts löschen.
+6. Kommentare in der 1. Stunde beantworten; beste Frage → „Mit Video antworten“.
