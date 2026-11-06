@@ -54,3 +54,15 @@ Faustregeln aus Blogs (nicht offiziell): Ø-Wiedergabe > 50 % der Länge = gut, 
 - Neal Schaffer – TikTok analytics: https://nealschaffer.com/tiktok-analytics/
 - Darkroom – TikTok SEO: https://www.darkroomagency.com/observatory/tiktok-seo
 - SocialPilot – TikTok SEO: https://www.socialpilot.co/blog/tiktok-seo
+
+## 7. Diagnose 2026-11-06: Deckel bei ~750–900 Aufrufen (beide Kanäle)
+Befund (Profil-Screenshots): jedes Video 749–897 Aufrufe, egal Thema/Stil/Länge; malangenommen72 8 Follower.
+→ Typisches Bild: Video bekommt nur den **ersten Test-Pool** und schafft den Sprung in den nächsten nicht
+(zu wenig % angesehen / Rewatch / Shares in den ersten Sekunden). Bestätigen mit TikTok-Studio-Daten
+(Ø Wiedergabezeit, % vollständig, Retention-Kurve, Traffic-Quellen).
+Vermutete Ursachen: (1) 35–45 s zu lang für unbekannten Kanal → niedrige Completion; der geboostete Wasser-Clip
+war 18,7 s. (2) Einstieg zu langsam/gleichförmig („MAL ANGENOMMEN …“-Titel, erster Satz > 1,5 s).
+(3) Synthetische Stimme ohne Gesicht/echte Erfahrung. (4) Kanäle überschneiden sich (AI72-Bio sagt auch
+„Psychologie“), malangenommen72-Bio verspricht „15 Sekunden“. (5) Kein Trend-Sound.
+Gegenmaßnahmen: A/B-Test kurz (20–28 s) vs. lang; Satz 1 = Behauptung in < 1 s, Bewegung ab Frame 0;
+Bios trennen; Loop-Ende; eine leichte Kommentarfrage; Trend-Sound leise.
