@@ -74,3 +74,18 @@ Titelbild = Frame 0 · „KI-generierter Inhalt“ an · Trend-Sound leise · Ko
 ## 10. Lernen
 Nach 4–6 Videos im neuen Format: Studio-Screenshots (Ø Wiedergabe, % vollständig, Shares, Traffic, Suche) auswerten,
 REICHWEITE.md ergänzen, diese Datei anpassen.
+
+## 11. Qualitätsziel „I-Mind-Niveau“ (Betreiber-Referenz 2026-11-06, Screen-Recording, nicht im Repo)
+Referenz: I-Mind „Going to bed late isn't what's hurting you“ – 24.965 Likes, 1.171 Komm., 2.988 Saves, 1.795 Shares.
+Was die Qualität ausmacht und wie wir es umsetzen:
+1. **Schnitt alle 1–2 s**: 12–16 Bildwechsel pro Video statt 6–7 Szenen → Szenen in Unter-Beats teilen (Zoom-in, neues Motiv, Perspektive).
+2. **Ein Wort pro Moment, groß in der Bildmitte** (schmale fette Schrift, farbig, leichte Kontur), Wort-genau zur Stimme.
+   Untertitel-Modus „single word center“ statt Zeilen unten.
+3. **Licht & Tiefe**: Verlaufshintergründe, Rim-Light (z. B. rot/blau Kante), Glow, Partikel/Sterne, Vorder-/Hintergrund-Ebenen
+   mit Parallaxe. Flache Formen bleiben, aber mit Licht.
+4. **Lebendige Figuren**: Gehen, Jubeln, Kopf drehen, Blinzeln; Gegenstände reagieren (Wecker wackelt, Uhrzeit tickt hoch).
+5. **Übergänge**: Lichtblitz-/Wisch-Übergang, Kamera-Push, Zahl-Enthüllung mit Ringen.
+6. **Zahlen als Spektakel**: große Zahl + Masse-Visualisierung (z. B. 22.000 Figuren-Raster, Scan-Linie, Markierungskreise).
+7. **Hook = Widerspruch über dich** („Spät ins Bett ist nicht dein Problem.“) – deckt sich mit „Warum du …?“-Regel.
+Format bleibt 9:16 (TikTok-Vollbild). Stile Dark v2 / kg bleiben erkennbar, werden aber nach Punkt 1–6 aufgewertet.
+Grenze: alles per Code gezeichnet (SVG/GSAP), keine KI-Bilder – Detailgrad einer Illustrator-Grafik nur annähernd.
