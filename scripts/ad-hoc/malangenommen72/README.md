@@ -188,6 +188,7 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | 13 | 60 oder 90 Sekunden Schmerz? Peak-End-Regel (malangenommen72) | Dark v2 + Textbox + Kamerafahrt |
 | 12 | Mythos-Check #2: Hilft Vitamin C gegen Erkältung? (AI72) | kg, Mythos-Check + Kamerafahrt |
 | – | Türschwellen-Effekt | vom Betreiber selbst schon gemacht |
+| – | Warum zuckst du beim Einschlafen? | schon verwendet (Betreiber 2026-11-06) |
 
 ## Kanal-Befund (Stand 2026-11-01)
 

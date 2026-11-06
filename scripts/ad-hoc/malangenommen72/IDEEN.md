@@ -38,3 +38,8 @@ Alle Fakten sind **vor der Produktion erneut zu prüfen** (Primärquelle). ⭐ =
 ## Recherche-Notizen
 - Psychische Störungen werden auf TikTok oft falsch dargestellt (nur ~1/5 der Videos korrekt, Bionity 2026) → bei Psychologie-Themen besonders sauber belegen, Diagnosen vermeiden.
 - Wintermythen-Faktenchecks: Pharmazeutische Zeitung, Beobachter, Berliner Kurier (dpa/Barmer) – Quellen gemischt, Primärstudien bevorzugen.
+
+## Nächste Runde (Betreiber-Freigabe 2026-11-06, Produktion erst bei „Go“)
+- malangenommen72: „Warum denkst du nachts an peinliche Momente von vor 10 Jahren?“ (Alternative: „Warum läufst du beim Telefonieren herum?“)
+- AI72: „Warum musst du gähnen, wenn andere gähnen?“
+- GESPERRT: „Warum zuckst du beim Einschlafen?“ – schon verwendet.
