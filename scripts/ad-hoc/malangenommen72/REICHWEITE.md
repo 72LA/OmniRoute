@@ -78,3 +78,11 @@ Likes/Tag fielen ab 02.11. von ~160–200 auf ~70.
 Verhalten (wiedererkennbar → teilbar + suchbar). Studie nur als Beweis, nicht als Überschrift.
 **Regel ab sofort:** Titel/Hook/Caption = Suchphrase „Warum [du] …?“; Share-Persona aus dem Thema selbst
 („schick's dem, der immer …“); 20–28 s; Serie + offener Faden zum nächsten Teil.
+
+## 9. Faceless-Content-Recherche (2026-11-06, Web; TikTok selbst ist ohne Login nicht durchsuchbar)
+Übereinstimmend (Vendor-Blogs, Zahlen nur Richtwerte): Erfolg hängt an **Hook-Stärke, Tempo und Themenrelevanz**,
+nicht am Gesicht. Bewährt: Pattern-Interrupts (schnelle Schnitte, SFX, Zoom-ins, Tempowechsel) alle paar Sekunden,
+**animierte Wort-für-Wort-Untertitel** als Standard, Erklärvideos zum Speichern/Teilen (Kurzgesagt-Prinzip:
+bunte Visuals + klare Stimme). Ohne Gesicht muss der Hook mehr leisten → Widerspruch/„Warum du …?“ in Sek. 0–2.
+Konsequenz: Bild-Pipeline + Einzelwort-Untertitel + Blitzschnitte (GO.md §11) beibehalten; Figur muss über alle
+Bilder **identisch** sein (AI72-Maskottchen als Referenzbild, OpenArt Kling 3 Omni „series“).
