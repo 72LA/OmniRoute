@@ -139,8 +139,8 @@ def sleep(p, dur, lead):
           f'tl.fromTo(".{p}-vi", {{scale: 0, transformOrigin: "50% 50%"}}, {{scale: 1, duration: 0.3, ease: "back.out(2)", stagger: 0.15}}, {lead + span * 0.18});'
           f'tl.fromTo("#{p}-r", {{scale: 0}}, {{scale: 1, duration: 0.35, ease: "back.out(1.8)"}}, {lead + span * 0.22});'
           f'tl.fromTo("#{p}-ch", {{opacity: 0}}, {{opacity: 1, duration: 0.3}}, {tc - 0.3});'
-          f'tl.fromTo("#{p}-b1", {{scaleY: 0}}, {{scaleY: 1, duration: 0.7, ease: "power3.out"}}, {tc});'
-          f'tl.fromTo("#{p}-b2", {{scaleY: 0}}, {{scaleY: 1, duration: 0.6, ease: "power3.out"}}, {lead + span * 0.8});'
+          f'tl.fromTo("#{p}-b1", {{scaleY: 0, svgOrigin: "350 1000"}}, {{scaleY: 1, duration: 0.7, ease: "power3.out"}}, {tc});'
+          f'tl.fromTo("#{p}-b2", {{scaleY: 0, svgOrigin: "730 1000"}}, {{scaleY: 1, duration: 0.6, ease: "power3.out"}}, {lead + span * 0.8});'
           f'tl.fromTo("#{p}-k", {{scale: 0}}, {{scale: 1, duration: 0.35, ease: "back.out(1.8)"}}, {tc + 0.4});')
     return html, js
 
