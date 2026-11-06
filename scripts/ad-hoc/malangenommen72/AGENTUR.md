@@ -12,7 +12,7 @@ Jede Produktion durchläuft **alle Abteilungen nacheinander**. Jede Abteilung ha
 | 2 | **Recherche & Faktencheck** | Quellenliste (nur Betreiber) | Jede Zahl aus Primärquelle oder ≥ 2 unabhängigen Quellen. Grenzen benennen (kleine Stichprobe, selbst berichtet, Effekt meist kleiner). Gesundheit: „ärztlich abklären“-Satz. |
 | 3 | **Skript & Hook** | `script.json` (110–125 Wörter) | Hook ≤ 1,5 s mit Suchwort; offene Schleife in 5 s; genau 1 Follow-Aufruf in der Mitte; Zahl vorher→nachher; umsetzbarer Schluss; Speicher-Aufruf; Share-Persona; Schluss führt zum Anfang. |
 | 4 | **Art Direction** | Szenenplan | Kanalstil (Dark v2 / kg); **Frame 0 = Cover** mit Kernaussage in **nativer Textbox** (weiß, schwarze Schrift); neuer Bildbeat alle 2–4 s; Text nur in y 168–1130; nur eigene Figuren. |
-| 5 | **Motion & Schnitt** | HyperFrames-Projekt | `lint` 0 Fehler, `check` ok, Snapshots angesehen; keine Pause > 0,4 s; Länge **35–45 s**. |
+| 5 | **Motion & Schnitt** | HyperFrames-Projekt | `lint` 0 Fehler, `check` ok, Snapshots angesehen; keine Pause > 0,4 s; Länge **35–45 s**; **langsame Kamerafahrt** (Scale 1 → 1,025–1,035) in jeder Szene, damit nie Standbild entsteht (ab #13/#12, Vorlage `scenes_peakend.py` / `scenes_vitc.py`). |
 | 6 | **Voice & Sound** | Stimme + SFX | Gemini „Puck“, max. 2 Requests pro Video; −14 LUFS; keine Musik im MP4. |
 | 7 | **SEO & Caption** | Caption-Block | Beginnt mit Suchphrase; 150–300 Zeichen; Kernzahl + Nutzen + Aufruf; **genau 5 Hashtags**; **kein Kanalname**; im Chat je Video **ein Kopier-Codeblock**. |
 | 8 | **Community** | Anpinn-Kommentar + Antwortplan | Kommentar-Frage, die leicht zu beantworten ist; in der 1. Stunde auf Kommentare antworten; gute Fragen → „Mit Video antworten“ = nächstes Thema. |

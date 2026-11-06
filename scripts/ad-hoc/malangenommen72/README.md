@@ -176,6 +176,8 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | 12 | Motivation bringt fast nichts – Wenn-dann-Plan 38 → 91 % (malangenommen72) | Dark v2 + native Textbox |
 | 11 | Mythos-Check: Macht Fingerknacken Arthrose? (AI72) | kg, Mythos-Check |
 | – | 8 Gläser Wasser am Tag? (vom Betreiber gepostet, geboostet) | Neon |
+| 13 | 60 oder 90 Sekunden Schmerz? Peak-End-Regel (malangenommen72) | Dark v2 + Textbox + Kamerafahrt |
+| 12 | Mythos-Check #2: Hilft Vitamin C gegen Erkältung? (AI72) | kg, Mythos-Check + Kamerafahrt |
 | – | Türschwellen-Effekt | vom Betreiber selbst schon gemacht |
 
 ## Kanal-Befund (Stand 2026-11-01)
