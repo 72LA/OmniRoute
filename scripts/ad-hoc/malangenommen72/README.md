@@ -55,7 +55,7 @@ Ab #05: **HyperFrames-Pipeline** – siehe `hyperframes/README.md`. Die Pillow-E
 ## Referenzbilder
 
 Die Original-Screenshots (Stilvorbilder, PsychoLogisch, TikTok-Tipps, Rätsel-Video) liegen bewusst **nicht** im Repo
-(fremdes Material). Der Betreiber hat sie als `Referenzen.zip`. Für eine neue Sitzung bei Bedarf erneut hochladen.
+(fremdes Material). Der Betreiber hat sie als `Referenzen.zip`. Inhalt (Stand 2026-11-06): 01–09 Stilvorbilder/Tipps, 10–13 Referenzanalyse (AGENTUR.md), 14–16 Profile + Boosts, 17–21 TikTok-Studio-Daten 29.10.–04.11. (Auswertung REICHWEITE.md §8), 22 Paar-Quiz (ausgeschlossen), 23 eigenes Wasser-Video. Für eine neue Sitzung bei Bedarf erneut hochladen.
 
 **NEUES FORMAT ab 2026-11-06 (Betreiber: „mach es so, wie es am meisten Reichweite bringt“): beide Kanäle 20–28 s**
 (ersetzt 35–45 s, Grund: Diagnose REICHWEITE.md §7). Skript 55–75 Wörter: Satz 1 = Behauptung < 1 s, Bewegung ab Frame 0,
