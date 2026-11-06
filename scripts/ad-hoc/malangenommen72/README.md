@@ -57,6 +57,12 @@ Ab #05: **HyperFrames-Pipeline** – siehe `hyperframes/README.md`. Die Pillow-E
 Die Original-Screenshots (Stilvorbilder, PsychoLogisch, TikTok-Tipps, Rätsel-Video) liegen bewusst **nicht** im Repo
 (fremdes Material). Der Betreiber hat sie als `Referenzen.zip`. Für eine neue Sitzung bei Bedarf erneut hochladen.
 
+**NEUES FORMAT ab 2026-11-06 (Betreiber: „mach es so, wie es am meisten Reichweite bringt“): beide Kanäle 20–28 s**
+(ersetzt 35–45 s, Grund: Diagnose REICHWEITE.md §7). Skript 55–75 Wörter: Satz 1 = Behauptung < 1 s, Bewegung ab Frame 0,
+kein „MAL ANGENOMMEN“-Vorlauf-Titel, 1 Zahl + 1 Aha + 1 Tipp, Follow-Aufruf nur als Text-Einblendung (kein eigener Satz),
+Schluss = Loop zur Anfangsfrage + 1 leichte Kommentarfrage. Nach 4–6 Videos mit Studio-Daten auswerten.
+Profile: malangenommen72 = Psychologie im Alltag; AI72 = Mythos-Check Körper & Gesundheit.
+
 **Lieferung im Chat (Betreiber-Regel 2026-11-06): nur noch kurz** – Video 1 + Caption-Kopierblock, Video 2 + Caption-Kopierblock.
 Keine langen Erklärungen, Quellen nur in der Textdatei.
 
