@@ -1,0 +1,10 @@
+[
+ {"say":"Warum kannst du dich nicht selbst kitzeln?","show":"Warum kannst du dich nicht selbst kitzeln?","scene":"hook"},
+ {"say":"Probier's mal. Es funktioniert einfach nicht.","show":"Probier's mal. Es funktioniert einfach nicht.","scene":"try"},
+ {"say":"Der Grund sitzt hinten in deinem Kopf: im Kleinhirn.","show":"Der Grund sitzt hinten in deinem Kopf: im Kleinhirn.","scene":"cerebellum"},
+ {"say":"Es sagt bei jeder Bewegung voraus, wie sie sich anfühlen wird. Und was vorhergesagt ist, wird gedämpft.","show":"Es sagt bei jeder Bewegung voraus, wie sie sich anfühlen wird. Und was vorhergesagt ist, wird gedämpft.","scene":"predict"},
+ {"say":"Folge A I zweiundsiebzig für mehr Wissen über dein Gehirn.","show":"Folge @ai72 für mehr Wissen über dein Gehirn.","scene":"follow"},
+ {"say":"Forscher ließen Menschen sich über einen Roboter selbst kitzeln. Mit einer kleinen Verzögerung fühlte es sich plötzlich kitzliger an.","show":"Forscher ließen Menschen sich über einen Roboter selbst kitzeln. Mit einer kleinen Verzögerung fühlte es sich plötzlich kitzliger an.","scene":"robot"},
+ {"say":"Denn dann passt die Vorhersage nicht mehr.","show":"Denn dann passt die Vorhersage nicht mehr.","scene":"mismatch"},
+ {"say":"Schick das jemandem, der extrem kitzlig ist.","show":"Schick das jemandem, der extrem kitzlig ist.","scene":"share"}
+]

@@ -1,0 +1,37 @@
+[
+ {
+  "say": "Mal angenommen, du musst wählen: sechzig Sekunden Schmerz oder neunzig. Fast siebzig Prozent nehmen die neunzig.",
+  "show": "Mal angenommen, du musst wählen: 60 Sekunden Schmerz oder 90. Fast 70 % nehmen die 90.",
+  "scene": "hook"
+ },
+ {
+  "say": "Klingt verrückt. Am Ende: wie du das nutzt.",
+  "show": "Klingt verrückt. Am Ende: wie du das nutzt.",
+  "scene": "loop"
+ },
+ {
+  "say": "Im Experiment: Hand in vierzehn Grad kaltem Wasser. Einmal sechzig Sekunden, einmal neunzig, die letzten dreißig ein Grad wärmer.",
+  "show": "Im Experiment: Hand in 14 Grad kaltem Wasser. Einmal 60 Sekunden, einmal 90, die letzten 30 ein Grad wärmer.",
+  "scene": "exp"
+ },
+ {
+  "say": "Das ist die Peak-End-Regel: Wir merken uns meist den schlimmsten Moment und das Ende, nicht die Dauer.",
+  "show": "Das ist die Peak-End-Regel: Wir merken uns meist den schlimmsten Moment und das Ende, nicht die Dauer.",
+  "scene": "rule"
+ },
+ {
+  "say": "Folge mal angenommen zweiundsiebzig für Psychologie, die hilft.",
+  "show": "Folge @malangenommen72 für Psychologie, die hilft.",
+  "scene": "follow"
+ },
+ {
+  "say": "Sogar beim Arzt: Bei sechshundertzweiundachtzig Darmspiegelungen fanden Patienten mit sanfterem Ende alles weniger schlimm, obwohl es länger dauerte.",
+  "show": "Sogar beim Arzt: Bei 682 Darmspiegelungen fanden Patienten mit sanfterem Ende alles weniger schlimm, obwohl es länger dauerte.",
+  "scene": "colon"
+ },
+ {
+  "say": "So nutzt du es: Beende Treffen mit dem schönsten Moment, Training mit der leichtesten Übung, Streit nie im Streit. Speicher dir das und schick es deinem nächsten Date.",
+  "show": "So nutzt du es: Beende Treffen mit dem schönsten Moment, Training mit der leichtesten Übung, Streit nie im Streit. Speicher dir das und schick es deinem nächsten Date.",
+  "scene": "tip"
+ }
+]

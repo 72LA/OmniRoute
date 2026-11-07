@@ -1,0 +1,37 @@
+[
+ {
+  "say": "Macht Fingerknacken wirklich Arthrose? Ein Arzt hat das sechzig Jahre lang an sich selbst getestet.",
+  "show": "Macht Fingerknacken wirklich Arthrose? Ein Arzt hat das 60 Jahre lang an sich selbst getestet.",
+  "scene": "hook"
+ },
+ {
+  "say": "Donald Unger knackte über sechzig Jahre nur die Finger seiner linken Hand, mindestens zweimal täglich. Die rechte ließ er in Ruhe.",
+  "show": "Donald Unger knackte über 60 Jahre nur die Finger seiner linken Hand, mindestens zweimal täglich. Die rechte ließ er in Ruhe.",
+  "scene": "unger"
+ },
+ {
+  "say": "Das Ergebnis: Arthrose in keiner der beiden Hände. Dafür bekam er sogar einen Ig-Nobelpreis.",
+  "show": "Das Ergebnis: Arthrose in keiner der beiden Hände. Dafür bekam er sogar einen Ig-Nobelpreis.",
+  "scene": "result"
+ },
+ {
+  "say": "Folge A I zweiundsiebzig für Wissen, das dir im Alltag hilft.",
+  "show": "Folge @ai72 für Wissen, das dir im Alltag hilft.",
+  "scene": "follow"
+ },
+ {
+  "say": "Auch eine Studie mit zweihundertfünfzehn Menschen fand keinen Zusammenhang. Das Knacken: Beim Ziehen entsteht im Gelenk blitzschnell ein Gas-Hohlraum. Darum klappt es erst nach etwa zwanzig Minuten wieder.",
+  "show": "Auch eine Studie mit 215 Menschen fand keinen Zusammenhang. Das Knacken: Beim Ziehen entsteht im Gelenk blitzschnell ein Gas-Hohlraum. Darum klappt es erst nach etwa 20 Minuten wieder.",
+  "scene": "joint"
+ },
+ {
+  "say": "Ehrlich: Eine ältere Studie fand bei Dauerknackern öfter geschwollene Hände. Ohne Schmerzen ist Knacken meist harmlos. Tut es weh, lass es abklären.",
+  "show": "Ehrlich: Eine ältere Studie fand bei Dauerknackern öfter geschwollene Hände. Ohne Schmerzen ist Knacken meist harmlos. Tut es weh, lass es abklären.",
+  "scene": "honest"
+ },
+ {
+  "say": "Speicher dir das. Und schick es jemandem, der ständig mit den Fingern knackt.",
+  "show": "Speicher dir das. Und schick es jemandem, der ständig mit den Fingern knackt.",
+  "scene": "share"
+ }
+]

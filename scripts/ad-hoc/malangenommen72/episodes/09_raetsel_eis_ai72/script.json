@@ -1,0 +1,9 @@
+[
+ {"say":"Rätsel: Warum schwimmt Eis auf dem Wasser, obwohl es fest ist?","show":"Rätsel: Warum schwimmt Eis auf dem Wasser, obwohl es fest ist?","scene":"hook"},
+ {"say":"Fast jeder Stoff ist fest schwerer als flüssig. Festes Wachs sinkt in flüssigem Wachs. Aber Eis schwimmt oben.","show":"Fast jeder Stoff ist fest schwerer als flüssig. Festes Wachs sinkt in flüssigem Wachs. Aber Eis schwimmt oben.","scene":"wax"},
+ {"say":"Was glaubst du? Schreib deine Antwort in die Kommentare, bevor die Lösung kommt.","show":"Was glaubst du? Schreib deine Antwort in die Kommentare, bevor die Lösung kommt.","scene":"think"},
+ {"say":"Folge A I zweiundsiebzig, hier gibt es jedes Mal ein neues Rätsel.","show":"Folge @ai72, hier gibt es jedes Mal ein neues Rätsel.","scene":"follow"},
+ {"say":"Die Lösung: Beim Gefrieren ordnen sich die Wassermoleküle zu einem Gitter mit vielen Lücken. Eis braucht dadurch etwa neun Prozent mehr Platz und ist leichter als Wasser.","show":"Die Lösung: Beim Gefrieren ordnen sich die Wassermoleküle zu einem Gitter mit vielen Lücken. Eis braucht dadurch etwa 9 % mehr Platz und ist leichter als Wasser.","scene":"lattice"},
+ {"say":"Das rettet Leben: Seen frieren von oben zu. Darunter bleibt das Wasser flüssig, und die Fische überleben den Winter.","show":"Das rettet Leben: Seen frieren von oben zu. Darunter bleibt das Wasser flüssig, und die Fische überleben den Winter.","scene":"lake"},
+ {"say":"Speicher dir das für die nächste Quizrunde. Und schick das Rätsel jemandem, der es nicht lösen kann.","show":"Speicher dir das für die nächste Quizrunde. Und schick das Rätsel jemandem, der es nicht lösen kann.","scene":"share"}
+]

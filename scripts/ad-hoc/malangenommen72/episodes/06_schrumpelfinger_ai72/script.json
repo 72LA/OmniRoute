@@ -1,0 +1,10 @@
+[
+ {"say":"Warum werden deine Finger im Wasser schrumpelig?","show":"Warum werden deine Finger im Wasser schrumpelig?","scene":"hook"},
+ {"say":"Die meisten denken: Die Haut saugt sich mit Wasser voll. Aber das stimmt so nicht.","show":"Die meisten denken: Die Haut saugt sich mit Wasser voll. Aber das stimmt so nicht.","scene":"myth"},
+ {"say":"Schon in den Dreißigerjahren fiel Ärzten auf: Bei Menschen mit beschädigten Fingernerven bleiben die Finger glatt.","show":"Schon in den 1930er-Jahren fiel Ärzten auf: Bei Menschen mit beschädigten Fingernerven bleiben die Finger glatt.","scene":"nerve"},
+ {"say":"Es ist also eine aktive Reaktion deines Körpers. Nerven lassen die Blutgefäße unter der Haut enger werden, und die Haut legt sich in Falten.","show":"Es ist also eine aktive Reaktion deines Körpers. Nerven lassen die Blutgefäße unter der Haut enger werden, und die Haut legt sich in Falten.","scene":"vessels"},
+ {"say":"Folge A I zweiundsiebzig für mehr Wissen über deinen Körper.","show":"Folge @ai72 für mehr Wissen über deinen Körper.","scene":"follow"},
+ {"say":"Aber wozu? In einer Studie konnten Menschen mit schrumpeligen Fingern nasse Murmeln schneller umsortieren.","show":"Aber wozu? In einer Studie konnten Menschen mit schrumpeligen Fingern nasse Murmeln schneller umsortieren.","scene":"marbles"},
+ {"say":"Wie ein Profil auf einem Reifen. Andere Studien fanden diesen Effekt allerdings nicht. Ganz geklärt ist es also noch nicht.","show":"Wie ein Profil auf einem Reifen. Andere Studien fanden diesen Effekt allerdings nicht. Ganz geklärt ist es also noch nicht.","scene":"tire"},
+ {"say":"Schick das jemandem, der stundenlang in der Badewanne liegt.","show":"Schick das jemandem, der stundenlang in der Badewanne liegt.","scene":"share"}
+]

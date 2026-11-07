@@ -1,0 +1,9 @@
+[
+ {"say":"Mal angenommen, du könntest jeden Menschen nur so sehen, wie er innen ist.","show":"Mal angenommen, du könntest jeden Menschen nur so sehen, wie er innen ist.","scene":"hook"},
+ {"say":"Genetisch sind wir Menschen zu etwa neunundneunzig Komma neun Prozent gleich. Am Ende zeige ich dir, was wirklich gegen Vorurteile hilft.","show":"Genetisch sind wir Menschen zu etwa 99,9 % gleich. Am Ende zeige ich dir, was wirklich gegen Vorurteile hilft.","scene":"dna"},
+ {"say":"Und die meisten Unterschiede gibt es nicht zwischen Gruppen, sondern innerhalb jeder Gruppe.","show":"Und die meisten Unterschiede gibt es nicht zwischen Gruppen, sondern innerhalb jeder Gruppe.","scene":"within"},
+ {"say":"Folge mal angenommen zweiundsiebzig für Psychologie, die etwas verändert.","show":"Folge @malangenommen72 für Psychologie, die etwas verändert.","scene":"follow"},
+ {"say":"Vorurteile entstehen durch das, was wir sehen und hören. Und was man lernt, kann man auch wieder verlernen.","show":"Vorurteile entstehen durch das, was wir sehen und hören. Und was man lernt, kann man auch wieder verlernen.","scene":"learn"},
+ {"say":"Eine Auswertung von über fünfhundert Studien zeigt: Wer Menschen aus anderen Gruppen persönlich kennenlernt, hat danach meist weniger Vorurteile.","show":"Eine Auswertung von über 500 Studien zeigt: Wer Menschen aus anderen Gruppen persönlich kennenlernt, hat danach meist weniger Vorurteile.","scene":"contact"},
+ {"say":"Also: Lern jemanden kennen, der anders ist als du. Hör zu. Und sag etwas, wenn jemand andere herabsetzt. Denn innen sind wir uns ähnlicher, als du denkst.","show":"Also: Lern jemanden kennen, der anders ist als du. Hör zu. Und sag etwas, wenn jemand andere herabsetzt. Denn innen sind wir uns ähnlicher, als du denkst.","scene":"tip"}
+]

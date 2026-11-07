@@ -1,0 +1,9 @@
+[
+ {"say":"Mal angenommen, ein einziges Wort bringt Menschen dazu, Ja zu sagen.","show":"Mal angenommen, ein einziges Wort bringt Menschen dazu, Ja zu sagen.","scene":"hook"},
+ {"say":"Neunzehnhundertachtundsiebzig ließ die Psychologin Ellen Langer Leute an einem Kopierer vordrängeln.","show":"1978 ließ die Psychologin Ellen Langer Leute an einem Kopierer vordrängeln.","scene":"copier"},
+ {"say":"Ohne Begründung sagten etwa sechzig Prozent Ja. Mit dem Wort weil waren es dreiundneunzig Prozent. Sogar bei einem sinnlosen Grund: weil ich Kopien machen muss.","show":"Ohne Begründung sagten etwa 60 % Ja. Mit dem Wort „weil“ waren es 93 %. Sogar bei einem sinnlosen Grund: „weil ich Kopien machen muss“.","scene":"bars"},
+ {"say":"Folge mal angenommen zweiundsiebzig für Psychologie, die du sofort nutzen kannst.","show":"Folge @malangenommen72 für Psychologie, die du sofort nutzen kannst.","scene":"follow"},
+ {"say":"Dein Gehirn hört weil und denkt automatisch: Da gibt es bestimmt einen guten Grund.","show":"Dein Gehirn hört „weil“ und denkt automatisch: Da gibt es bestimmt einen guten Grund.","scene":"brain"},
+ {"say":"Aber Achtung: Bei großen Bitten hat nur ein echter Grund funktioniert.","show":"Aber Achtung: Bei großen Bitten hat nur ein echter Grund funktioniert.","scene":"caution"},
+ {"say":"Probier es heute aus. Sag bei deiner nächsten Bitte weil und einen ehrlichen Grund. Und schreib mir, ob es geklappt hat.","show":"Probier es heute aus. Sag bei deiner nächsten Bitte „weil“ und einen ehrlichen Grund. Und schreib mir, ob es geklappt hat.","scene":"tip"}
+]

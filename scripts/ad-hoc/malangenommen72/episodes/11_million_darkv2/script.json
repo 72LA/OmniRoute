@@ -1,0 +1,32 @@
+[
+ {
+  "say": "Mal angenommen, du gewinnst morgen eine Million. Wärst du in einem Jahr glücklicher?",
+  "show": "Mal angenommen, du gewinnst morgen eine Million. Wärst du in einem Jahr glücklicher?",
+  "scene": "hook"
+ },
+ {
+  "say": "Die Antwort überrascht. Am Ende zeige ich dir, was stattdessen wirkt.",
+  "show": "Die Antwort überrascht. Am Ende zeige ich dir, was stattdessen wirkt.",
+  "scene": "loop"
+ },
+ {
+  "say": "Neunzehnhundertachtundsiebzig befragten Forscher Lottogewinner, Monate nach dem großen Gewinn. Auf einer Skala bis fünf: Lottogewinner vier Komma null. Andere Menschen drei Komma acht. Kaum ein Unterschied.",
+  "show": "1978 befragten Forscher Lottogewinner, Monate nach dem großen Gewinn. Auf einer Skala bis 5: Lottogewinner 4,0. Andere Menschen 3,8. Kaum ein Unterschied.",
+  "scene": "bars"
+ },
+ {
+  "say": "Folge mal angenommen zweiundsiebzig für Psychologie, die dein Leben leichter macht.",
+  "show": "Folge @malangenommen72 für Psychologie, die dein Leben leichter macht.",
+  "scene": "follow"
+ },
+ {
+  "say": "Das nennt man hedonische Anpassung: Wir gewöhnen uns an fast alles Gute, und das Neue wird normal. Neuere Studien zeigen: Mehr Geld hilft etwas, aber weniger, als wir denken.",
+  "show": "Das nennt man hedonische Anpassung: Wir gewöhnen uns an fast alles Gute, und das Neue wird normal. Neuere Studien zeigen: Mehr Geld hilft etwas, aber weniger, als wir denken.",
+  "scene": "treadmill"
+ },
+ {
+  "say": "So nutzt du es: Gib Geld lieber für Erlebnisse aus als für Dinge. Gönn dir Schönes mit Pausen, dann bleibt es besonders. Speicher dir das. Und jetzt ehrlich: Wärst du mit einer Million glücklicher?",
+  "show": "So nutzt du es: Gib Geld lieber für Erlebnisse aus als für Dinge. Gönn dir Schönes mit Pausen, dann bleibt es besonders. Speicher dir das. Und jetzt ehrlich: Wärst du mit einer Million glücklicher?",
+  "scene": "tip"
+ }
+]

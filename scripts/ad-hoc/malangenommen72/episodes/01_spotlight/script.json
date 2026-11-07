@@ -1,0 +1,11 @@
+[
+ {"say":"Forscher ließen Studenten ein peinliches T-Shirt tragen.","show":"Forscher ließen Studenten ein peinliches T-Shirt tragen.","scene":"shirt","gap":0.1},
+ {"say":"Das Ergebnis überrascht.","show":"Das Ergebnis überrascht.","scene":"shirtq","gap":0.25},
+ {"say":"Die Studenten dachten, die Hälfte der Leute im Raum hätte es bemerkt.","show":"Die Studenten dachten, die Hälfte der Leute im Raum hätte es bemerkt.","scene":"bars1","gap":0.15},
+ {"say":"Tatsächlich war es nur etwa ein Viertel.","show":"Tatsächlich war es nur etwa ein Viertel.","scene":"bars2","gap":0.3},
+ {"say":"Folge mal angenommen zweiundsiebzig für mehr davon.","show":"Folge @malangenommen72 für mehr davon.","scene":"follow","gap":0.3},
+ {"say":"Das ist der Spotlight-Effekt.","show":"Das ist der Spotlight-Effekt.","scene":"spot","gap":0.15},
+ {"say":"Du erlebst dich ständig von innen, und glaubst deshalb, alle sehen dich genauso genau.","show":"Du erlebst dich ständig von innen und glaubst deshalb, alle sehen dich genauso genau.","scene":"spotphones","gap":0.25},
+ {"say":"Die anderen stehen in ihrem eigenen Spotlight.","show":"Die anderen stehen in ihrem eigenen Spotlight.","scene":"manyspots","gap":0.3},
+ {"say":"Welcher peinliche Moment geht dir bis heute nicht aus dem Kopf?","show":"Welcher peinliche Moment geht dir bis heute nicht aus dem Kopf?","scene":"comment","gap":1.6}
+]

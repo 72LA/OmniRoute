@@ -1,0 +1,37 @@
+[
+ {
+  "say": "Hilft Vitamin C gegen Erkältung? Eine Auswertung mit über elftausend Menschen sagt: kaum. Was mehr zählt, kommt gleich.",
+  "show": "Hilft Vitamin C gegen Erkältung? Eine Auswertung mit über 11.000 Menschen sagt: kaum. Was mehr zählt, kommt gleich.",
+  "scene": "hook"
+ },
+ {
+  "say": "Regelmäßig genommen, schützt es nicht vor Erkältung. Sie dauert nur etwa acht Prozent kürzer: bei einer Woche ein halber Tag.",
+  "show": "Regelmäßig genommen, schützt es nicht vor Erkältung. Sie dauert nur etwa 8 % kürzer: bei einer Woche ein halber Tag.",
+  "scene": "week"
+ },
+ {
+  "say": "Und erst nehmen, wenn's im Hals kratzt? Kein klarer Effekt.",
+  "show": "Und erst nehmen, wenn's im Hals kratzt? Kein klarer Effekt.",
+  "scene": "late"
+ },
+ {
+  "say": "Folge A I zweiundsiebzig für den nächsten Mythos-Check.",
+  "show": "Folge @ai72 für den nächsten Mythos-Check.",
+  "scene": "follow"
+ },
+ {
+  "say": "Was mehr ausmacht: Schlaf. Forscher gaben Menschen Erkältungsviren in die Nase. Wer fünf bis sechs Stunden schlief, hatte ein etwa viermal so hohes Risiko wie mit über sieben.",
+  "show": "Was mehr ausmacht: Schlaf. Forscher gaben Menschen Erkältungsviren in die Nase. Wer 5 bis 6 Stunden schlief, hatte ein etwa 4-mal so hohes Risiko wie mit über 7.",
+  "scene": "sleep"
+ },
+ {
+  "say": "Ehrlich: kleine Studie. Trotzdem: sieben Stunden schlafen, oft Hände waschen, Vitamin C lieber aus Paprika und Kiwi.",
+  "show": "Ehrlich: kleine Studie. Trotzdem: 7 Stunden schlafen, oft Hände waschen, Vitamin C lieber aus Paprika und Kiwi.",
+  "scene": "tips"
+ },
+ {
+  "say": "Speicher dir das für die Erkältungszeit und schick es jemandem, der gerade Vitamin-C-Tabletten schluckt.",
+  "show": "Speicher dir das für die Erkältungszeit und schick es jemandem, der gerade Vitamin-C-Tabletten schluckt.",
+  "scene": "share"
+ }
+]
