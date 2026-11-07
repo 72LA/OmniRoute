@@ -31,3 +31,30 @@
 *Warum besser:* Story statt Frage; die eigentliche Frage wird erst in Sek. 3–6 angedeutet (offene Schleife);
 Bonuswissen hält bis zur Auflösung; Ehrlichkeitshinweis („ältere Studie: öfter geschwollen“) in die Caption statt in den Sprechtext.
 *Fakten:* „über 40.000 Mal“ = mindestens 2×/Tag × 365 × 60 Jahre (Unger: „mindestens zweimal täglich“) – vor Produktion so kennzeichnen.
+
+---
+# Neue Themen (noch nicht produziert) – Beispiele 3 + 4
+
+## 3) malangenommen72 – Fresh-Start-Effekt (Dai, Milkman & Riis 2014) · Hook-Typ D (Du-Szene) · Abschluss 3 (Gegenposition)
+(~22 s, 68 Wörter; keine Prozentzahl, da nur Sekundärquellen)
+| Zeit | Text (Stimme) | Bild |
+|---|---|---|
+| 0,0–1,6 | „Montag, sechs Uhr. Du startest – schon wieder – neu.“ | Wecker 06:00 springt an, Kalenderblatt MO knallt ins Bild (Frame 0 voll) |
+| 1,6–3,4 | „Und weißt du was? Das ist kein Selbstbetrug.“ | Stempel „SELBSTBETRUG?“ wird durchgestrichen |
+| 3,4–6,8 | „Forscher werteten Gym-Besuche, Diät-Suchen und neue Ziele aus.“ | drei Icons (Hantel, Lupe, Flagge) gleiten nacheinander ein |
+| 6,8–11,5 | „Nach jedem Neuanfang stiegen alle drei: neue Woche, neuer Monat – sogar nach dem Geburtstag.“ | Zeitstrahl, an jedem Startpunkt schießt eine Kurve hoch (Auflösung ~50–60 %) |
+| 11,5–15,0 | „Forscher vermuten: Ein Neustart fühlt sich an wie ein neues Ich.“ | Figur tritt über eine Linie, alte Silhouette bleibt grau zurück |
+| 15,0–18,5 | „Der Trick: Häng deinen Plan an so einen Tag – nicht an irgendwann.“ | Kalender: „IRGENDWANN“ zerfällt, Datum leuchtet |
+| 18,5–22,0 | „Ich sag: Montag ist kein Witz. Oder wartest du lieber auf Neujahr?“ | Waage MONTAG ↔ NEUJAHR kippt hin und her |
+
+## 4) AI72 – 10.000 Schritte (Paluch et al. 2022, Lancet Public Health) · Hook-Typ A (Widerspruch) · Abschluss 2 (persönliche Zahl)
+(~23 s, 64 Wörter; Infografik ohne Figur)
+| Zeit | Text (Stimme) | Bild |
+|---|---|---|
+| 0,0–1,4 | „Zehntausend Schritte? Das war Werbung.“ | große Zahl 10.000 mit Preisschild „WERBUNG“ (Frame 0 voll) |
+| 1,4–4,6 | „In den Sechzigern verkaufte eine japanische Firma einen Schrittzähler – Name: Zehntausend-Schritte-Zähler.“ | Retro-Schrittzähler dreht sich, Jahreszahl 1960er |
+| 4,6–6,0 | „Studien dahinter: keine.“ | Stempel „0 STUDIEN“ |
+| 6,0–9,0 | „Dann werteten Forscher Daten von fast 50.000 Menschen aus.“ | Raster aus Punkten füllt den Bildschirm, Zähler bis 47.471 |
+| 9,0–12,0 | „Ergebnis: Der Nutzen steigt – und flacht dann ab.“ | Kurve zeichnet sich, wird flach |
+| 12,0–17,0 | „Über sechzig: ab etwa 6.000 bis 8.000 Schritten. Jünger: ab 8.000 bis 10.000.“ | zwei Marker auf der Kurve leuchten auf (Auflösung ~70 %) |
+| 17,0–23,0 | „Wie viele Schritte hast du heute? Schreib die Zahl in die Kommentare.“ | Schrittzähler-Display zählt hoch, „?“ blinkt |

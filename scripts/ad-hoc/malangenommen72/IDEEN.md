@@ -45,3 +45,8 @@ Alle Fakten sind **vor der Produktion erneut zu prüfen** (Primärquelle). ⭐ =
 - GESPERRT: „Warum zuckst du beim Einschlafen?“ – schon verwendet.
 
 - AI72 nächstes Thema (Vorschlag, Freigabe offen): „Frieren Frauen wirklich schneller?“ (Mythos-Check, Bürotemperatur)
+
+## Nächste Produktion (Skripte fertig in episodes/BEISPIEL_Retention_Skripte.md, Beispiele 3+4)
+- malangenommen72: Fresh-Start-Effekt (Hook D, Abschluss 3)
+- AI72: 10.000 Schritte (Hook A, Abschluss 2)
+- Beispiele 1+2 (Motivation, Fingerknacken) sind nur Vorher/Nachher-Demos – Themen schon verwendet, nicht neu produzieren.
