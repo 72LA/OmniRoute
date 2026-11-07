@@ -1,5 +1,7 @@
 # AI72 (ehem. malangenommen72) – Video-Studio (TikTok)
 
+> **Antwortstil: immer Caveman (`/anthropic-skills:caveman`) – kurz, ohne Füllwörter, alle Fakten bleiben. Dauerhaft, bis Betreiber „normal mode“ sagt.**
+
 > **Bei „Go“: zuerst `GO.md` lesen – verbindlicher Ablauf (Mix aus alten + neuen Regeln). Bei Widerspruch gilt GO.md.**
 
 Produktionspaket für den TikTok-Kanal **@malangenommen72** (Psychologie, Wissen, „Wusstest du?“).
