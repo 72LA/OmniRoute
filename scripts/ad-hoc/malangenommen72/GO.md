@@ -117,3 +117,7 @@ Keine KI-Bilder, kein OpenArt/Stable Horde. `pipeline_img/` nur noch als Archiv.
   - Morph-/Übergangsbewegungen zwischen Beats (Objekt wandert/skaliert in das nächste statt hartem Cut)
   - Zahlen hochzählen, Balken wachsen mit Überschwinger, Linien zeichnen sich
   - weniger gleichzeitige Elemente pro Bild, mehr Weißraum, saubere Ausrichtung auf Raster, max. 2 Textpillen gleichzeitig
+
+
+## 14. Antwortstil im Chat (Betreiber 2026-11-07)
+Immer knapp im Caveman-Stil antworten (kurz, kein Füllwort, alle Fakten/Zahlen/Pfade bleiben), dauerhaft für dieses Projekt, bis der Betreiber „normal mode“ sagt.
