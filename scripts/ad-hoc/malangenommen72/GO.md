@@ -105,3 +105,15 @@ Keine KI-Bilder, kein OpenArt/Stable Horde. `pipeline_img/` nur noch als Archiv.
   Max. ~1 SFX pro Bildbeat, nie über der Stimme dominant.
 - Bild-Upgrade im alten Stil: `FX = True` im Szenenmodul → Partikel + weicher Licht-Sweep bei jedem Szenenwechsel (`build_hf.py`),
   Kamerafahrt via `S(p, inner, dur)` aus `scenes_peakend.py` (Dark) bzw. `scenes_vitc.py` (kg), Unter-Beats je Szene, Follow-Pille als Einblendung.
+
+## 13. AI72 ohne Maskottchen + hochwertigere Animation (Betreiber 2026-11-07)
+- **AI72: keine feste Figur mehr.** Höchstens eine neutrale, einfache Figur (Silhouette/Piktogramm), meist **gar keine**.
+  Stattdessen Infografik-Schema aus den Referenzen: Objekte, Icons, Diagramme, Zahlen, Körper-/Organ-Schemata,
+  Vergleichsbalken, Zeitstrahlen, Raster aus vielen kleinen Elementen (I-Mind „22.000 Menschen“), Lupen/Zoom auf Details,
+  kg-Farbwelt (Indigo, Türkis, Magenta, Gelb, weiche Lichtringe) bleibt. Keine Kurzgesagt-Figuren/Logos.
+- **Animation hochwertiger + cleaner (beide Kanäle):**
+  - weiche Easing-Kurven (expo/power3, kein hartes Ploppen überall), gestaffelte Einblendungen (stagger)
+  - ständige leichte Eigenbewegung: Schweben (y ±6 px), langsames Drehen von Ringen, Pulsieren von Glows, Parallaxe zwischen Ebenen
+  - Morph-/Übergangsbewegungen zwischen Beats (Objekt wandert/skaliert in das nächste statt hartem Cut)
+  - Zahlen hochzählen, Balken wachsen mit Überschwinger, Linien zeichnen sich
+  - weniger gleichzeitige Elemente pro Bild, mehr Weißraum, saubere Ausrichtung auf Raster, max. 2 Textpillen gleichzeitig
