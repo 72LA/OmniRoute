@@ -101,8 +101,8 @@ Quellen: TikTok-Hinweis „So erstellt man einen hilfreichen Beitrag“, Kanal P
 - Aufbau jedes Videos: **Hook** (1–3 s, keine Begrüßung) → Hauptteil mit konkretem Beispiel →
   **genau ein** kurzer Follow-Aufruf in der Mitte („Folge @malangenommen72 …“) →
   Abschluss mit Frage / Teil-Aufruf.
-- Länge **35–45 s** (seit 2026-11-02, verbindlich; Skript auf ~95–125 Wörter auslegen), 9:16 (1080×1920), Untertitel eingebrannt, keine Musik (die fügt der Betreiber in der
-  TikTok-App hinzu, privates Konto).
+- Länge **35–45 s** (seit 2026-11-02, verbindlich; Skript auf ~95–125 Wörter auslegen), 9:16 (1080×1920), Untertitel eingebrannt. **Musik seit 2026-11-07: eigene, prozedurale Musik** (`hyperframes/music.py`,
+  leise −30 LUFS, unter der Stimme geduckt, kein Fremd-Copyright) – siehe GO.md §16. (Länge: GO.md §15 gilt, 20–25 s.)
 - Pro Video: TikTok-Caption + **genau 5 Hashtags**, **ohne Kanalnamen** (kein `#malangenommen72`/`#ai72`, Kanalname auch nicht im Caption-Text) – Betreiber-Regel seit 2026-11-04. Quellen nur für den Betreiber.
 - Ablauf: Captions + Hashtags für beide Videos immer mitliefern und zusätzlich direkt im Chat schicken. Videos nur nach „Go“.
 - Nur echte, geprüfte Fakten; Unsicherheit sprachlich kennzeichnen („meistens“, „etwa“, „in einer Studie“).
@@ -199,6 +199,8 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | 14 | Mythos-Check #3: Frieren Frauen wirklich schneller? (AI72) | kg aufgewertet, sauberer Sound |
 | 16 | Warum denkst du nach Gesprächen, dass sie dich nicht mochten? (malangenommen72) | Dark v2, motion.py |
 | 15 | Mythos-Check #4: Macht Kälte krank? (AI72) | kg-Infografik ohne Figur, motion.py |
+| 17 | Warum klappt „ab Montag“ manchmal doch? Fresh-Start-Effekt (malangenommen72) | Dark v2, Hook D, eigene Musik |
+| 16 | Mythos-Check #5: Muss man 10.000 Schritte gehen? (AI72) | kg-Infografik, Hook A, eigene Musik |
 
 ## Kanal-Befund (Stand 2026-11-01)
 

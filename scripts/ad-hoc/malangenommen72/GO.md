@@ -52,7 +52,8 @@ Primärquelle oder ≥ 2 unabhängige Quellen per Websuche prüfen. Unsicherheit
 1. `script.json` in `hf/aNN` bzw. `hf/bNN` (Arbeitsordner `_artifacts/malangenommen72/hf/`).
 2. Stimme: `python3 ../tts_groups.py gemini-3.8-flash-tts Puck '[[0,1,2],[3,4,5]]'` (2 Requests/Video, Free-Tier 10/Tag/Modell,
    Fallbacks `gemini-3.1-flash-tts-preview`, `gemini-3.8-flash-lite-tts`; nie proben). Satzschnitte prüfen (ch/s-Ausreißer → von Hand schneiden).
-3. `python3 ../assemble.py <tempo>` – Ziel Gesamtlänge ≤ 28 s (Builder hängt ~1,6 s an).
+3. `python3 ../assemble.py <tempo>` – Ziel Gesamtlänge ≤ 28 s (Builder hängt ~1,6 s an). Danach `clean_voice.sh <ep>` und
+   Musik: `python3 music.py <ep> dark|bright [bpm]` (§16) – `build_hf.py` bindet `<ep>/music.wav` automatisch ein.
 4. `hyperframes init proj_xNN --resolution portrait --non-interactive --skip-skills`; `python3 build_hf.py <ep> <proj> dark2|kg <NN> scenes_x.py`.
 5. `lint` → `check --json` → `snapshot` ansehen und Fehler beheben (GSAP-Skalierung in SVG immer mit `svgOrigin`).
 6. `render --quality delivery`; ffmpeg `loudnorm=I=-14:TP=-1.5:LRA=11`; fertiges MP4 Stichprobe ansehen.
@@ -155,5 +156,17 @@ Immer knapp im Caveman-Stil antworten (kurz, kein Füllwort, alle Fakten/Zahlen/
 **Hook-/Abschluss-Log (pro Kanal, neueste zuerst):**
 | Kanal | Video | Hook-Typ | Abschluss-Typ |
 |---|---|---|---|
+| malangenommen72 | #17 | D (Du-Szene) | 3 Gegenposition |
+| AI72 | #16 | A (Widerspruch) | 2 persönliche Zahl |
 | malangenommen72 | #16 | G (Frage) | 5 Share |
 | AI72 | #15 | G (Frage) | 5 Share |
+
+## 16. Musik (Betreiber 2026-11-07: „ab jetzt machst du passende Musik dazu“)
+- Jedes Video bekommt **eigene, prozedural erzeugte Musik** – kein Fremd-Track (kein Copyright-/Mute-Risiko auf TikTok).
+- `python3 hyperframes/music.py <ep> dark|bright [bpm]` (im Arbeitsordner `hf/`): erzeugt `<ep>/music.wav` (48 kHz Stereo, Länge Stimme + 1,6 s).
+  - **dark** (malangenommen72): Am–F–C–G, weiches Saw-Pad (Tiefpass), Sinus-Bass, leiser Kick auf 1+3, Shimmer; 70–80 bpm.
+  - **bright** (AI72): C–G–Am–F, gezupftes Arpeggio (Karplus-Strong), Sinus-Pad/Bass, leiser Shaker; 100–110 bpm.
+- Mix: **−30 LUFS** Bett, Sidechain-Ducking an der Stimme (−60 % beim Sprechen), Fade-in/out, leichtes Echo. Stimme bleibt klar vorn.
+- `build_hf.py` legt sie als `<audio id="bgm">` (Spur 6) an; danach wie immer `loudnorm −14 LUFS` aufs fertige MP4.
+- Tempo je Video variieren (3. Argument bpm), damit nicht jedes Video gleich klingt. Bisher: #17 dark 76 bpm, AI72 #16 bright 104 bpm.
+

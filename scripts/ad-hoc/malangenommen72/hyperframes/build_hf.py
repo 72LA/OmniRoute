@@ -163,6 +163,10 @@ if getattr(sc, "FX", False):
 """)
     fx_host = f'<div id="fx" data-composition-id="fx" data-composition-src="compositions/fx.html" data-start="0" data-duration="{TOTAL}" data-track-index="3" data-track-kind="graphics" data-width="{W}" data-height="{H}"></div>'
 
+music_tag = ""
+if os.path.exists(f"{EPD}/music.wav"):   # own procedural bed, already ducked + at -30 LUFS
+    shutil.copy(f"{EPD}/music.wav", f"{PRJ}/assets/music.wav")
+    music_tag = f'<audio id="bgm" class="clip" src="assets/music.wav" data-start="0" data-duration="{TOTAL}" data-track-index="6" data-volume="1"></audio>'
 # ---------------- background + stamp ----------------
 if DARK2:
     import dark2_lib
@@ -225,6 +229,7 @@ index = f"""<!doctype html>
       {chr(10).join(hosts)}
       {fx_host}
       <div id="caps" data-composition-id="caps" data-composition-src="compositions/caps.html" data-start="0" data-duration="{TOTAL}" data-track-index="2" data-track-kind="captions" data-width="{W}" data-height="{H}"></div>
+      {music_tag}
       <audio id="vo" class="clip" src="assets/voice.wav" data-start="0" data-duration="{VODUR}" data-track-index="5" data-volume="1"></audio>
       {chr(10).join(sfx_tags)}
     </div>

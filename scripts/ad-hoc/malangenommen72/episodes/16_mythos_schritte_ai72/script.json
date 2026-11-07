@@ -1,0 +1,9 @@
+[
+ {"say":"Zehntausend Schritte? Das war Werbung.","show":"10.000 Schritte? Das war Werbung.","scene":"hook"},
+ {"say":"In den Sechzigern verkaufte eine japanische Firma einen Schrittzähler – Name: Zehntausend-Schritte-Zähler.","show":"In den 60ern verkaufte eine japanische Firma einen Schrittzähler – Name: 10.000-Schritte-Zähler.","scene":"pedo"},
+ {"say":"Studien dahinter: keine.","show":"Studien dahinter: keine.","scene":"zero"},
+ {"say":"Dann werteten Forscher Daten von fast fünfzigtausend Menschen aus.","show":"Dann werteten Forscher Daten von fast 50.000 Menschen aus.","scene":"crowd"},
+ {"say":"Ergebnis: Der Nutzen steigt – und flacht dann ab.","show":"Ergebnis: Der Nutzen steigt – und flacht dann ab.","scene":"curve"},
+ {"say":"Über sechzig: ab etwa sechs- bis achttausend Schritten. Jünger: ab acht- bis zehntausend.","show":"Über 60: ab etwa 6.000 bis 8.000 Schritten. Jünger: ab 8.000 bis 10.000.","scene":"marks"},
+ {"say":"Wie viele Schritte hast du heute? Schreib die Zahl in die Kommentare.","show":"Wie viele Schritte hast du heute? Schreib die Zahl in die Kommentare.","scene":"end"}
+]
