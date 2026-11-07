@@ -40,10 +40,13 @@ for i, ((a, b), l) in enumerate(zip(segs, lines)):
     if KG:
         import kg_lib; kg_lib.PREFIX = f"{sid}_"
     html, js = sc.SCENES[l["scene"]](sid, dur, lead)
-    title = sc.TITLES.get(l["scene"])
+    title = sc.TITLES.get(l["scene"]) if i > 0 else None   # hook scene: no title – only the hook visual + text
     title_html = f'<div id="{sid}-title" class="title">{title}</div>' if title else ""
     title_js = (f'tl.fromTo("#{sid}-title", {{opacity: 0, filter: "blur(8px)"}}, {{opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out"}}, 0);'
                 if title and i > 0 else "")
+    if i == 0:   # punch-in on frame 0: motion from the very first frame
+        title_js += f'tl.fromTo("#{sid}-wrap", {{scale: 1.12}}, {{scale: 1, duration: 0.45, ease: "expo.out"}}, 0);'
+        html = f'<div id="{sid}-wrap" style="position:absolute;inset:0;transform-origin:50% 45%">{html}</div>'
     open(f"{PRJ}/compositions/{sid}.html", "w").write(f"""<template>
   <style>
     #root {{ position: absolute; inset: 0; font-family: var(--font-display); color: var(--ink); }}

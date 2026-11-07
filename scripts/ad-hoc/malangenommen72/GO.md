@@ -121,3 +121,39 @@ Keine KI-Bilder, kein OpenArt/Stable Horde. `pipeline_img/` nur noch als Archiv.
 
 ## 14. Antwortstil im Chat (Betreiber 2026-11-07)
 Immer knapp im Caveman-Stil antworten (kurz, kein Füllwort, alle Fakten/Zahlen/Pfade bleiben), dauerhaft für dieses Projekt, bis der Betreiber „normal mode“ sagt.
+
+## 15. Retention-System (Betreiber-Daten 2026-11-07) – gilt ab dem nächsten „Go“, ersetzt bei Widerspruch §4
+**Daten (42-s-Video):** Ø Wiedergabe 8,4 s · Bindung 20 % · nach 2 s nur 55 % · größter Verlust in Sekunde 1.
+**Analyse der bisherigen Umsetzung (gefundene Ursachen):**
+1. Stimme startete erst bei 0,15 s, Pausen 0,3/0,2 s zwischen Sätzen + bis 0,28 s Pausen im Satz → Leerlauf in Sek. 0–1.
+2. Hook-Szene zeigte 3 Textebenen (Stempel + Titel „MAL ANGENOMMEN …“/„MYTHOS-CHECK“ + Textbox) → Lesestress, kein Bild-Reiz.
+3. Hook-Grafiken „zeichneten sich erst auf“ (0,2–0,6 s leer/halb leer) → erster Frame ohne Reiz.
+4. Hooks immer gleiches Muster: „Warum …?“ / „Macht X …?“ (6 Videos in Folge) → austauschbar.
+5. Fragen-Hooks ohne Einsatz/Spannung; Antwort kam spät oder gar nicht als Überraschung.
+6. Schluss immer „Schick das dem, der …“ (6× in Folge) → keine echte Diskussion.
+**Umgesetzte Technik-Änderungen (Code):**
+- `engine/assemble.py`: Stimme startet bei 0,0 s (`VO_LEAD`), Satzpause 0,09 s (`VO_GAP`, vorher 0,3/0,2).
+- `engine/tighten.py`: Pausen im Satz ab 0,18 s werden gekürzt (vorher erst ab 0,28 s), Rest-Pause 0,07 s.
+- `hyperframes/build_hf.py`: Hook-Szene ohne Titel; Punch-in-Zoom 1,12 → 1 in 0,45 s ab Frame 0.
+- Tempo beim Assemble 1,06–1,10 (nicht 1,0); danach `clean_voice.sh` wie gehabt.
+**Skript-Regeln (neu):**
+- Hook ≤ 7 Wörter, < 1,5 s gesprochen; erstes Wort konkret (Zahl, Ding, „Du“-Situation), nie „Mal angenommen …“, nie Begrüßung.
+- **Hook-Typ rotieren** (nie 2× denselben Typ hintereinander pro Kanal, Log unten führen):
+  A Widerspruch („Motivation macht dich nicht sportlicher.“) · B Zahl-Schock („91 % – wegen eines Satzes.“)
+  C Cold-Open-Story („Ein Arzt knackte 60 Jahre lang nur eine Hand.“) · D Du-Szene („3 Uhr nachts. Du denkst an diesen einen Satz.“)
+  E Mitmach-Test („Schau kurz auf deine linke Hand.“) · F Fehler/Warnung („Diesen Fehler machst du nach jedem Gespräch.“)
+  G Konkrete Frage mit Einsatz – höchstens jedes 4. Video.
+- **Bild in Sek. 0–2:** Hook-Motiv komplett sichtbar ab Frame 0 (kein Aufzeichnen von leer), ≥ 2 Bildwechsel bis Sek. 2.
+- **Spannungsbogen:** Hook → in Satz 2 offene Frage/Einsatz („Das Ergebnis hat die Forscher selbst überrascht.“) →
+  2 Aufbau-Beats (Gegenspieler/Erwartung) → **Auflösung bei 60–75 % der Länge** → 1 Satz Nutzen → Abschluss.
+- Keine Wiederholung derselben Aussage, keine Füllsätze („Und das ist interessant …“), Sätze ≤ 10 Wörter, keine Aufzählungen > 3.
+- **Länge 20–25 s** (55–70 Wörter), länger nur wenn das Thema es braucht.
+- **Stimme natürlicher:** kurze Sätze, Gedankenstrich/Doppelpunkt für Betonung, Zahlen als Pointe ans Satzende, Fragezeichen nur bei echten Fragen.
+- **Abschluss rotieren** (nie 2× derselbe Typ): 1 A/B-Diskussion („Harmlos oder eklig? Schreib’s rein.“) ·
+  2 persönliche Zahl („Wie viele Stunden schläfst du? Ehrlich.“) · 3 Gegenposition („Ich finde: … – siehst du das anders?“) ·
+  4 offener Faden zu Teil 2 · 5 Share-Persona (höchstens jedes 3. Video).
+**Hook-/Abschluss-Log (pro Kanal, neueste zuerst):**
+| Kanal | Video | Hook-Typ | Abschluss-Typ |
+|---|---|---|---|
+| malangenommen72 | #16 | G (Frage) | 5 Share |
+| AI72 | #15 | G (Frage) | 5 Share |

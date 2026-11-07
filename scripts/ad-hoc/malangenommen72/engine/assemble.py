@@ -3,7 +3,8 @@ import json, os, subprocess, sys, wave, numpy as np
 ENG = os.path.dirname(os.path.abspath(__file__))
 lines = json.load(open("script.json")); tempo = float(sys.argv[1]); echo_first = len(sys.argv) > 2
 SR = 24000
-out = [np.zeros(int(0.15 * SR))]; segs = []; t = 0.15
+LEAD = float(os.environ.get("VO_LEAD", "0.0"))   # voice starts on frame 0 (retention: biggest drop in second 1)
+out = [np.zeros(int(LEAD * SR))]; segs = []; t = LEAD
 for i, l in enumerate(lines):
     subprocess.run(["python3", f"{ENG}/tighten.py", f"s{i:02d}.wav", "_s.wav", str(tempo)], check=True, capture_output=True)
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", "_s.wav", "-af",
@@ -18,7 +19,7 @@ for i, l in enumerate(lines):
         x = y
     segs.append([round(t, 3), round(t + d, 3)]); out.append(x); t += len(x) / SR
     if i < len(lines) - 1:
-        g = 0.3 if i == 0 else 0.2
+        g = float(os.environ.get("VO_GAP", "0.09"))   # was 0.3/0.2 s – no dead air between sentences
         out.append(np.zeros(int(g * SR))); t += g
 y = np.concatenate(out); y = y / max(1, np.abs(y).max()) * 30000
 with wave.open("full_voice.wav", "wb") as w: w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes(y.astype(np.int16).tobytes())
