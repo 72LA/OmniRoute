@@ -33,6 +33,7 @@ Alle Fakten sind **vor der Produktion erneut zu prüfen** (Primärquelle). ⭐ =
 - **Fortsetzungen**: „Ab Montag“-Typ (#12) → Fresh-Start (#6) → Wenn-dann + Neustart (Teil 3).
 - **Share als Handlung**: Kompliment-Video endet mit „Schick das der Person, die du gerade meinst“.
 - **Saisonal planen**: Dezember = Glühwein/Kälte/Weihnachtsstress; Ende Dezember = Fresh-Start/Vorsätze.
+- **„Ihr entscheidet“**: Ende mit A/B-Themenwahl, nächstes Video zeigt echtes Ergebnis als Pille (GO.md §17).
 - **Kommentar → nächstes Video**: Fragen aus Kommentaren mit „Mit Video antworten“ beantworten.
 
 ## Recherche-Notizen
@@ -50,3 +51,4 @@ Alle Fakten sind **vor der Produktion erneut zu prüfen** (Primärquelle). ⭐ =
 - malangenommen72: Fresh-Start-Effekt (Hook D, Abschluss 3)
 - AI72: 10.000 Schritte (Hook A, Abschluss 2)
 - Beispiele 1+2 (Motivation, Fingerknacken) sind nur Vorher/Nachher-Demos – Themen schon verwendet, nicht neu produzieren.
+- VERWORFEN (Betreiber 2026-11-07): Bolzplatz/„1 Follower = 1 Ziegel“ und „Wissens-Regal wächst pro Follower“.

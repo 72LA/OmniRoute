@@ -172,3 +172,16 @@ Immer knapp im Caveman-Stil antworten (kurz, kein Füllwort, alle Fakten/Zahlen/
 - `build_hf.py` legt sie als `<audio id="bgm">` (Spur 6) an; danach wie immer `loudnorm −14 LUFS` aufs fertige MP4.
 - Tempo je Video variieren (3. Argument bpm), damit nicht jedes Video gleich klingt. Bisher: #17 dark 76 bpm, AI72 #16 bright 104 bpm.
 
+
+## 17. Community-Mechanik (Betreiber 2026-11-07: „wenn es gut trenden könnte, für beide Kanäle benutzen“)
+Bolzplatz-/„1 Follower = 1 Ziegel“-Idee VERWORFEN. Stattdessen, für beide Kanäle:
+- **Abschluss-Typ 6 „Ihr entscheidet“** (neu in der Rotation von §15, höchstens jedes 2. Video): Video endet mit
+  „Morgen: A oder B? Schreib’s rein.“ – zwei konkrete Themen, die zum Kanal passen (Psychologie bzw. Mythos-Check).
+  Caption + Anpinn-Kommentar wiederholen die Wahl („A = …, B = … 👇“).
+- **Ergebnis im nächsten Video**: kleine Pille unter dem Stempel in Szene 1, ~2 s („IHR HABT GEWÄHLT: B · 64 %“) – der Hook bleibt
+  trotzdem auf Frame 0 (§15). **Nur echte Zahlen**: Ergebnis gibt der Betreiber durch (Claude kann TikTok-Kommentare nicht lesen).
+  Ohne gemeldetes Ergebnis: keine Pille, keine erfundenen Prozente.
+- **Serien**: Nummer im Stempel (Mythos-Check #N, Fortsetzungs-Fäden wie „Ab Montag“ → Fresh-Start). Jeder Teil hat seine
+  **eigene Auflösung**; Cliffhanger nur als Zusatz-Faden (Abschluss-Typ 4), nie Auflösung zurückhalten. Betreiber legt TikTok-Playlist an.
+- **Fragen aus Kommentaren**: Betreiber schickt Kommentar → Antwort-Video („Mit Video antworten“), Kommentar-Sticker oben.
+- Nicht: Follower-Zähler/„1 Follower = 1 X“-Fortschritt (stagniert sichtbar, lenkt vom Thema ab).
