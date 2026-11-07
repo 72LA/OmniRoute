@@ -163,6 +163,36 @@ if getattr(sc, "FX", False):
 """)
     fx_host = f'<div id="fx" data-composition-id="fx" data-composition-src="compositions/fx.html" data-start="0" data-duration="{TOTAL}" data-track-index="3" data-track-kind="graphics" data-width="{W}" data-height="{H}"></div>'
 
+# ---------------- progress bar on top: runs linearly 0 -> 100 % over the whole video (opt-out: sc.PROGRESS = False) ----------------
+prog_host = ""
+if getattr(sc, "PROGRESS", True):
+    if LINE:
+        trk, fill, glow, tick = "rgba(255,255,255,.16)", "#ffffff", "0 0 14px rgba(255,255,255,.85)", "rgba(0,0,0,.85)"
+    else:
+        trk, fill, glow, tick = "rgba(10,6,40,.55)", "linear-gradient(90deg,#3ee0ff 0%,#ffd23f 100%)", "0 0 14px rgba(255,210,63,.8)", "rgba(27,15,61,.9)"
+    head = "#ffffff" if LINE else "#ffd23f"
+    ticks = "".join(f'<i class="tk" style="left:{round(W * segs[i][0] / TOTAL) - 2}px"></i>' for i in range(1, len(segs)))
+    open(f"{PRJ}/compositions/prog.html", "w").write(f"""<template>
+  <style>
+    #root {{ position: absolute; inset: 0; pointer-events: none; }}
+    #pg-trk {{ position: absolute; left: 0; top: 0; width: {W}px; height: 14px; background: {trk}; }}
+    #pg-fill {{ position: absolute; left: 0; top: 0; width: {W}px; height: 14px; background: {fill}; box-shadow: {glow}; transform-origin: 0 50%; transform: scaleX(0); }}
+    .tk {{ position: absolute; top: 0; width: 4px; height: 14px; background: {tick}; }}
+    #pg-head {{ position: absolute; left: -11px; top: -4px; width: 22px; height: 22px; border-radius: 50%; background: {head}; box-shadow: {glow}; }}
+  </style>
+  <div id="root" data-composition-id="prog" data-width="{W}" data-height="{H}">
+    <div id="pg-trk"></div><div id="pg-fill"></div>{ticks}<div id="pg-head"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({{ paused: true }});
+    tl.fromTo("#pg-fill", {{scaleX: 0}}, {{scaleX: 1, duration: {TOTAL}, ease: "none"}}, 0);
+    tl.fromTo("#pg-head", {{x: 0}}, {{x: {W}, duration: {TOTAL}, ease: "none"}}, 0);
+    window.__timelines["prog"] = tl;
+  </script>
+</template>
+""")
+    prog_host = f'<div id="prog" data-composition-id="prog" data-composition-src="compositions/prog.html" data-start="0" data-duration="{TOTAL}" data-track-index="4" data-track-kind="graphics" data-width="{W}" data-height="{H}"></div>'
+
 music_tag = ""
 if os.path.exists(f"{EPD}/music.wav"):   # own procedural bed, already ducked + at -30 LUFS
     shutil.copy(f"{EPD}/music.wav", f"{PRJ}/assets/music.wav")
@@ -228,6 +258,7 @@ index = f"""<!doctype html>
       <div id="stamp" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="0"><span>{CHANNEL} #{EP}</span></div>
       {chr(10).join(hosts)}
       {fx_host}
+      {prog_host}
       <div id="caps" data-composition-id="caps" data-composition-src="compositions/caps.html" data-start="0" data-duration="{TOTAL}" data-track-index="2" data-track-kind="captions" data-width="{W}" data-height="{H}"></div>
       {music_tag}
       <audio id="vo" class="clip" src="assets/voice.wav" data-start="0" data-duration="{VODUR}" data-track-index="5" data-volume="1"></audio>

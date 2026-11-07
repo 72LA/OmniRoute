@@ -46,6 +46,8 @@ Primärquelle oder ≥ 2 unabhängige Quellen per Websuche prüfen. Unsicherheit
 - Bewegung ab Frame 0; neuer Bildbeat alle 2–3 s; **Kamerafahrt** (Scale 1 → 1,025–1,035) je Szene.
 - Text ≥ 28 px, nur y 168–1130; Untertitel eingebrannt, Schlüsselwörter hervorgehoben.
 - Zahl groß im Bild (Balken/Vergleich). Letztes Bild = Anfangsfrage (Loop).
+- **Fortschrittsbalken oben** (Betreiber 2026-11-07, Pflicht in jedem Video): läuft linear 0→100 % übers ganze Video, 14 px an der Oberkante,
+  Kapitel-Ticks an jedem Szenenwechsel, leuchtender Punkt vorn. Dark v2 weiß, kg Türkis→Gelb. Kommt automatisch aus `build_hf.py` (abschalten nur mit `PROGRESS = False`).
 - Vorlagen: Dark v2 `hyperframes/scenes_peakend.py`, kg `hyperframes/scenes_vitc.py`, `scenes_knacken.py`.
 
 ## 6. Technik (Reihenfolge)
