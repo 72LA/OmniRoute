@@ -195,6 +195,8 @@ Layout-Zonen: Titel y≈360, Inhalt y 470–1130, Untertitel y 1250, Stempel y 1
 | – | Gähnen (AI72) | VERWORFEN + gesperrt (Betreiber 2026-11-06) |
 | 15 | Warum machst du so selten Komplimente? (malangenommen72) | Dark v2 aufgewertet, sauberer Sound |
 | 14 | Mythos-Check #3: Frieren Frauen wirklich schneller? (AI72) | kg aufgewertet, sauberer Sound |
+| 16 | Warum denkst du nach Gesprächen, dass sie dich nicht mochten? (malangenommen72) | Dark v2, motion.py |
+| 15 | Mythos-Check #4: Macht Kälte krank? (AI72) | kg-Infografik ohne Figur, motion.py |
 
 ## Kanal-Befund (Stand 2026-11-01)
 

@@ -1,0 +1,7 @@
+[
+ {"say":"Macht Kälte krank? Nicht direkt. Aber sie hilft den Viren.","show":"Macht Kälte krank? Nicht direkt. Aber sie hilft den Viren.","scene":"hook"},
+ {"say":"In einer Studie standen neunzig Menschen zwanzig Minuten mit den Füßen in kaltem Wasser.","show":"In einer Studie standen 90 Menschen 20 Minuten mit den Füßen in kaltem Wasser.","scene":"feet"},
+ {"say":"Danach meldeten dreizehn eine Erkältung. Ohne kalte Füße nur fünf.","show":"Danach meldeten 13 eine Erkältung. Ohne kalte Füße nur 5.","scene":"result"},
+ {"say":"Forscher vermuten: Kälte verengt die Adern in der Nase. Viren, die schon da sind, haben dann leichteres Spiel.","show":"Forscher vermuten: Kälte verengt die Adern in der Nase. Viren, die schon da sind, haben dann leichteres Spiel.","scene":"nose"},
+ {"say":"Also: Füße warm halten. Und schick das dem, der im Winter barfuß rumläuft.","show":"Also: Füße warm halten. Und schick das dem, der im Winter barfuß rumläuft.","scene":"tip"}
+]
