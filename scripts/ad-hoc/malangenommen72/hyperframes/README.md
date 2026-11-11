@@ -1,5 +1,7 @@
 # HyperFrames-Pipeline (ab #05)
 
+> **Aktueller Ablauf: `../GO.md` §18 (Pipeline v2: `engine/voice.py`, `music.py --key/--prog`, `finish.sh`).** Der Text unten beschreibt den alten Weg.
+
 Seit #05 werden die Videos mit **HyperFrames** (HeyGen, Apache-2.0) gerendert: HTML + GSAP → MP4.
 Plugin: `/plugin marketplace add heygen-com/hyperframes` und `/plugin install hyperframes@hyperframes`.
 CLI über den Plugin-Launcher: `HF="node <PLUGIN_ROOT>/skills/hyperframes/scripts/plugin-cli.mjs"`

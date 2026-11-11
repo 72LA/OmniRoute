@@ -7,11 +7,13 @@ import importlib.util, json, os, re, shutil, sys
 
 EPD, PRJ, STYLE, EP, MOD = sys.argv[1:6]
 HERE = os.path.dirname(os.path.abspath(__file__))
-SFXDIR = "/root/.claude/plugins/marketplaces/hyperframes/skills/media-use/audio/assets/sfx"
+SFXDIR = os.environ.get("HF_SFX_DIR", "/root/.claude/plugins/marketplaces/hyperframes/skills/media-use/audio/assets/sfx")
 spec = importlib.util.spec_from_file_location("scenes", MOD); sc = importlib.util.module_from_spec(spec); spec.loader.exec_module(sc)
 
 lines = json.load(open(f"{EPD}/script.json"))
 segs = json.load(open(f"{EPD}/segs_abs.json"))
+WORDS = json.load(open(f"{EPD}/words.json")) if os.path.exists(f"{EPD}/words.json") else None   # from engine/voice.py: word-accurate timing
+HOOKCARD = getattr(sc, "HOOKCARD", WORDS is not None)   # big kinetic hook line on frame 0 (needs word timing; opt-out: HOOKCARD = False)
 TOTAL = round(segs[-1][1] + 1.6, 2)
 import wave as _w
 with _w.open(f"{EPD}/full_voice.wav") as _f: VODUR = round(_f.getnframes() / _f.getframerate(), 3)
@@ -28,6 +30,27 @@ if LINE:
     CSS_VARS = "--ground:#000;--ink:#fff;--dim:#8a8a8a;--grid:#161616;--accent:#fff;--font-display:'Montserrat';--font-mono:'Space Mono';"
 else:
     CSS_VARS = "--ground:#0e1a3d;--ink:#fff;--dim:#9fb0d8;--yellow:#ffd400;--pink:#ff4f8b;--cyan:#3ee0ff;--out:#0a0f24;--navy2:#1c2e64;--cream:#ffecd6;--font-display:'Montserrat';--font-mono:'Space Mono';"
+
+# ---------------- hook card (frame 0) ----------------
+def hook_phrases():
+    """line 0 split at . ? ! , – into big phrases with their spoken start time (max ~16 characters per phrase)."""
+    ws = [w for w in WORDS if w["line"] == 0]; out, cur = [], []
+    for w in ws:
+        cur.append(w)
+        if w["w"][-1:] in ".?!,:–" or len(" ".join(c["w"] for c in cur)) >= 16:
+            out.append(cur); cur = []
+    if cur: out.append(cur)
+    return [(round(p[0]["t0"], 3), round(p[-1]["t1"], 3), " ".join(c["w"] for c in p).rstrip(",").upper()) for p in out]
+
+def fit_px(txt, wmax=800, top=132):
+    return int(max(64, min(top, wmax / max(1, len(txt)) / 0.66)))
+
+if DARK2 or LINE:
+    HK_CSS = ".hk span{background:#fff;color:#000;padding:10px 30px 14px;border-radius:14px;box-shadow:0 0 44px rgba(255,255,255,.55)}"
+else:
+    HK_CSS = ".hk span{background:#ffd23f;color:#1b0f3d;padding:10px 32px 14px;border-radius:26px;box-shadow:10px 12px 0 #1b0f3d}"
+HK_CSS += (".hk{position:absolute;left:0;right:0;top:268px;text-align:center;font-weight:900;line-height:1.1;opacity:0;white-space:nowrap;z-index:5}"
+           ".hk span{display:inline-block}.flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:6}")
 
 # ---------------- scenes ----------------
 hosts = []
@@ -46,12 +69,31 @@ for i, ((a, b), l) in enumerate(zip(segs, lines)):
                 if title and i > 0 else "")
     if i == 0:   # punch-in on frame 0: motion from the very first frame
         title_js += f'tl.fromTo("#{sid}-wrap", {{scale: 1.12}}, {{scale: 1, duration: 0.45, ease: "expo.out"}}, 0);'
+        if HOOKCARD:   # first second: flash on frame 0, one big hook phrase at a time on the spoken word, a camera jump on each phrase
+            ph = hook_phrases()
+            title_js += f'tl.fromTo("#{sid}-flash", {{opacity: 0.4}}, {{opacity: 0, duration: 0.2, ease: "power2.out", immediateRender: false}}, 0.034);'
+            for k, (t0, t1, txt) in enumerate(ph):
+                hid = f"{sid}-hk{k}"; t1 = ph[k + 1][0] if k + 1 < len(ph) else dur
+                title_html += f'<div id="{hid}" class="hk" style="font-size:{fit_px(txt)}px"><span>{txt}</span></div>'
+                if k == 0:
+                    title_js += f'tl.fromTo("#{hid}", {{scale: 1.1, opacity: 1}}, {{scale: 1, opacity: 1, duration: 0.3, ease: "expo.out"}}, 0);'
+                else:
+                    z = 1.05 + 0.03 * (k % 2); ox = (42, 58)[k % 2]
+                    title_js += (f'tl.set("#{hid}", {{opacity: 1}}, {t0});'
+                                 f'tl.fromTo("#{hid}", {{scale: 1.16, rotation: {(-2, 2)[k % 2]}}}, {{scale: 1, rotation: 0, duration: 0.24, ease: "back.out(1.7)", immediateRender: false}}, {t0});'
+                                 f'tl.fromTo("#{sid}-wrap", {{scale: {z + 0.07}, transformOrigin: "{ox}% 45%"}}, {{scale: {z}, duration: 0.4, ease: "expo.out", immediateRender: false}}, {t0});')
+                if k + 1 < len(ph): title_js += f'tl.set("#{hid}", {{opacity: 0}}, {t1});'
+            title_html += f'<div id="{sid}-flash" class="flash"></div>'
         html = f'<div id="{sid}-wrap" style="position:absolute;inset:0;transform-origin:50% 45%">{html}</div>'
+    elif getattr(sc, "ENTER", True):   # every later scene lands on a move (cut on motion): slightly large + soft, settles in 0.34 s
+        title_js += f'tl.fromTo("#{sid}-wrap", {{scale: 1.07, filter: "blur(10px)"}}, {{scale: 1, filter: "blur(0px)", duration: 0.34, ease: "expo.out"}}, 0);'
+        html = f'<div id="{sid}-wrap" style="position:absolute;inset:0;transform-origin:50% 43%">{html}</div>'
     open(f"{PRJ}/compositions/{sid}.html", "w").write(f"""<template>
   <style>
     #root {{ position: absolute; inset: 0; font-family: var(--font-display); color: var(--ink); }}
     .title {{ position: absolute; left: 0; right: 0; top: 250px; text-align: center; font-weight: 900; font-size: 84px; letter-spacing: -0.01em; line-height: 1.05; padding: 0 70px; }}
     {sc.SCENE_CSS}
+    {HK_CSS}
   </style>
   <div id="root" data-composition-id="{sid}" data-width="{W}" data-height="{H}">
     {title_html}
@@ -77,26 +119,43 @@ def chunks(text):
     if cur: out.append(cur)
     return out
 
-groups = []
-for (a, b), l in zip(segs, lines):
-    cs = chunks(l["show"]); tot = sum(len(" ".join(c)) + 4 for c in cs); t0 = a
-    for c in cs:
-        d = (b - a) * (len(" ".join(c)) + 4) / tot; groups.append((round(t0, 3), round(t0 + d, 3), c)); t0 += d
+groups = []   # (start, end, [words], [word start times] or None)
+if WORDS:      # word-accurate: every group opens on its first spoken word, every word lights up when it is said
+    for li, l in enumerate(lines):
+        if li == 0 and HOOKCARD: continue          # the hook line is the big card on top, not a caption
+        ws = [w for w in WORDS if w["line"] == li]; cur = []
+        for w in ws:
+            cur.append(w)
+            if len(" ".join(c["w"] for c in cur)) >= 14 or w["w"].endswith((",", ".", "?", "!", ":", "“")) or len(cur) == 3:
+                groups.append((cur[0]["t0"], cur[-1]["t1"], [c["w"] for c in cur], [c["t0"] for c in cur])); cur = []
+        if cur: groups.append((cur[0]["t0"], cur[-1]["t1"], [c["w"] for c in cur], [c["t0"] for c in cur]))
+    for k in range(len(groups) - 1):               # hold each group until the next one starts (max 0.5 s after its last word)
+        a, b, ws, ts = groups[k]; groups[k] = (a, min(groups[k + 1][0], b + 0.5), ws, ts)
+else:
+    for (a, b), l in zip(segs, lines):
+        cs = chunks(l["show"]); tot = sum(len(" ".join(c)) + 4 for c in cs); t0 = a
+        for c in cs:
+            d = (b - a) * (len(" ".join(c)) + 4) / tot; groups.append((round(t0, 3), round(t0 + d, 3), c, None)); t0 += d
 
-def word_html(w):
+def word_html(w, wid=""):
     k = re.sub(r"[,.?!:„“\"]", "", w).lower() in sc.KEYS
-    return f'<span class="w{" key" if k else ""}">{w}</span>'
+    return f'<span {f'id="{wid}" ' if wid else ""}class="w{" key" if k else ""}">{w}</span>'
 
 cap_divs, cap_js = [], []
-for gi, (a, b, ws) in enumerate(groups):
+for gi, (a, b, ws, ts) in enumerate(groups):
     gid = f"cg{gi}"
-    cap_divs.append(f'<div id="{gid}" class="cg">{" ".join(word_html(w) for w in ws)}</div>')
+    cap_divs.append(f'<div id="{gid}" class="cg">{" ".join(word_html(w, f"{gid}w{k}" if ts else "") for k, w in enumerate(ws))}</div>')
+    if ts:
+        for k, t in enumerate(ts):
+            dim = 1 if re.sub(r"[,.?!:„“\"]", "", ws[k]).lower() in sc.KEYS else 0.4   # key words keep their box/colour, they only pop
+            if k: cap_js.append(f'tl.fromTo("#{gid}w{k}", {{opacity: {dim}, scale: 0.9}}, {{opacity: 1, scale: 1, duration: 0.1, ease: "power3.out"}}, {round(t, 3)});')
     cap_js.append(f'tl.set("#{gid}", {{visibility: "visible", opacity: 1}}, {a});'
                   f'tl.fromTo("#{gid}", {{scale: 0.9}}, {{scale: 1, duration: 0.14, ease: "power3.out"}}, {a});'
                   f'tl.set("#{gid}", {{opacity: 0, visibility: "hidden"}}, {b + 0.04 if gi + 1 == len(groups) or groups[gi+1][0] > b + 0.04 else groups[gi+1][0]});')
 if DARK2:
-    cap_css = (".cg{position:absolute;left:0;right:0;top:1190px;text-align:center;font-family:var(--font-display);font-weight:800;font-size:70px;color:#fff;"
-               "visibility:hidden;opacity:0;padding:0 80px;line-height:1.15;overflow:visible;text-shadow:0 0 16px rgba(255,255,255,.45)}"
+    cap_css = (".cg{position:absolute;left:0;right:0;top:1190px;text-align:center;font-family:var(--font-display);font-weight:800;font-size:80px;color:#fff;"
+               "visibility:hidden;opacity:0;padding:0 70px;line-height:1.15;overflow:visible;text-shadow:0 0 16px rgba(255,255,255,.45)}"
+               ".cg .w{display:inline-block}"
                ".cg .key{background:#fff;color:#000;padding:0 12px;text-shadow:none}")
 elif LINE:
     cap_css = (".cg{position:absolute;left:0;right:0;top:1150px;text-align:center;font-family:var(--font-display);font-weight:800;font-size:76px;color:#fff;"
@@ -104,8 +163,9 @@ elif LINE:
                ".cg .key{background:#fff;color:#000;padding:0 12px}"
                ".cg .w:not(.key){-webkit-text-stroke:10px #000;paint-order:stroke fill}")
 elif KG:
-    cap_css = (".cg{position:absolute;left:0;right:0;top:1170px;text-align:center;font-family:var(--font-display);font-weight:900;font-size:74px;color:#fff;"
-               "visibility:hidden;opacity:0;padding:0 80px;line-height:1.15;overflow:visible;text-shadow:0 5px 0 #1b0f3d}"
+    cap_css = (".cg{position:absolute;left:0;right:0;top:1170px;text-align:center;font-family:var(--font-display);font-weight:900;font-size:82px;color:#fff;"
+               "visibility:hidden;opacity:0;padding:0 70px;line-height:1.15;overflow:visible;text-shadow:0 6px 0 #1b0f3d}"
+               ".cg .w{display:inline-block}"
                ".cg .key{color:#ffd23f}")
 else:
     cap_css = (".cg{position:absolute;left:0;right:0;top:1150px;text-align:center;font-family:var(--font-display);font-weight:900;font-size:78px;color:#fff;"

@@ -1,4 +1,4 @@
-# GO-Ablauf – verbindlich, sobald der Betreiber „Go“ schreibt (Stand 2026-11-06)
+# GO-Ablauf – verbindlich, sobald der Betreiber „Go“ schreibt (Stand 2026-11-11)
 
 Diese Datei ist die **eine Quelle** für jede Produktion. Sie vereint alte Regeln, die funktioniert haben
 (Boosts „8 Gläser Wasser“ und „Fuß in der Tür“, Top-Videos „Warum du …?“), mit den neuen Regeln aus der
@@ -51,6 +51,8 @@ Primärquelle oder ≥ 2 unabhängige Quellen per Websuche prüfen. Unsicherheit
 - Vorlagen: Dark v2 `hyperframes/scenes_peakend.py`, kg `hyperframes/scenes_vitc.py`, `scenes_knacken.py`.
 
 ## 6. Technik (Reihenfolge)
+> **Ab 2026-11-11 gilt der neue Ablauf in §18** (ein Stimm-Take, Wort-Timing, Hook-Karte, Musik mit Tonart, `finish.sh`).
+> Die Schritte 2–6 hier unten sind der alte Weg – nur noch für alte Projekte.
 1. `script.json` in `hf/aNN` bzw. `hf/bNN` (Arbeitsordner `_artifacts/malangenommen72/hf/`).
 2. Stimme: `python3 ../tts_groups.py gemini-3.8-flash-tts Puck '[[0,1,2],[3,4,5]]'` (2 Requests/Video, Free-Tier 10/Tag/Modell,
    Fallbacks `gemini-3.1-flash-tts-preview`, `gemini-3.8-flash-lite-tts`; nie proben). Satzschnitte prüfen (ch/s-Ausreißer → von Hand schneiden).
@@ -185,3 +187,79 @@ Bolzplatz-/„1 Follower = 1 Ziegel“-Idee VERWORFEN. Stattdessen, für beide K
   **eigene Auflösung**; Cliffhanger nur als Zusatz-Faden (Abschluss-Typ 4), nie Auflösung zurückhalten. Betreiber legt TikTok-Playlist an.
 - **Fragen aus Kommentaren**: Betreiber schickt Kommentar → Antwort-Video („Mit Video antworten“), Kommentar-Sticker oben.
 - Nicht: Follower-Zähler/„1 Follower = 1 X“-Fortschritt (stagniert sichtbar, lenkt vom Thema ab).
+
+## 18. Pipeline v2 (2026-11-11) – gilt ab dem nächsten „Go“, ersetzt bei Widerspruch §6, §12 und §16
+**Anlass:** Deckel 700–800 Aufrufe; nach 2 s nur 55 %, Ø-Bindung 20 %. Vorher-Render von #17 und AI72 #16 ausgewertet.
+**Befund (gemessen am alten Stand):**
+1. Frame 0 ohne Aussage: Hook stand nur als kleine Untertitel-Zeile, 1–2 Wörter („Montag,“). Titelbild sagt nichts.
+2. Sek. 0–2 fast Standbild: ein Motiv, nur Untertitel wechseln. Regel „≥ 2 Bildwechsel bis Sek. 2“ nicht erfüllt.
+3. Satzschnitte falsch, wenn zwei Sätze ohne Pause gesprochen wurden (AI72 #16: 2 von 6 Schnitten mitten im Satz).
+4. Untertitel nach Zeichenzahl verteilt, nicht nach Sprache → laufen der Stimme davon oder hinterher.
+5. Ton: einfaches `loudnorm` schoss bei #17 auf 0,0 dBFS (Clipping-Gefahr). Musik blendete 0,4 s ein → erste Sekunde dünn.
+6. Musik immer gleiche Tonart und Akkordfolge.
+7. #17-Hook hatte 8 Wörter (Regel: ≤ 7) – fiel ohne Prüfung nicht auf.
+
+**Neuer Ablauf (Arbeitsordner `_artifacts/malangenommen72/hf/<ep>`, `$M72` = dieser Ordner im Repo):**
+1. `script.json` schreiben → `python3 $M72/engine/check_script.py script.json`. **FAIL = umschreiben, vorher kein TTS.**
+2. Stimme: `python3 $M72/engine/voice.py` (im Episoden-Ordner). **1 Request pro Video**, ganzer Text am Stück
+   (natürlicher Satzfluss), Stil über `speech_metadata.style` (wird nicht vorgelesen), Fallback-Modelle automatisch.
+   Lokales Sprachmodell (`pip install faster-whisper`, kein Kontingent) findet jedes Wort → `words.json` + `segs_abs.json`.
+   Pausen werden nur gekürzt (Satz 0,14 s, im Satz 0,10 s, 6-ms-Überblendung), nie hart geschnitten. Tempo automatisch
+   (Ziel 19 Zeichen/s, höchstens 1,10). Saubere Kette ist eingebaut (`clean_voice.sh` entfällt).
+   **Pflicht:** Ausgabe lesen – jede „heard“-Zeile muss zum Skriptsatz passen. `take.wav` wird wiederverwendet, nie neu geholt.
+3. Musik: `python3 $M72/hyperframes/music.py <ep> dark|bright [bpm] [--key A] [--prog NAME] [--lift SEK]`.
+   - **Tonart + Akkordfolge pro Video**: ohne Angabe fest aus dem Ordnernamen abgeleitet (jedes Video anders, aber wiederholbar).
+     dark: `pop` i-VI-III-VII · `fall` i-VII-VI-VII · `plagal` i-iv-VI-V · `rise` VI-VII-i-i.
+     bright: `pop` I-V-vi-IV · `fifties` I-vi-IV-V · `lift` IV-I-V-vi · `walk` I-IV-vi-V.
+   - **Schlag auf Frame 0** (kein Einblenden), **Öffnung bei `--lift`** = Start der Auflösungs-Szene (Standard 62 % der Länge),
+     Schluss auf dem Grundakkord. Bett −27 LUFS, beim Sprechen ca. −8 dB geduckt. Wahl steht in `<ep>/music.json`.
+   - Nie zwei Videos hintereinander mit gleicher Tonart + Folge auf einem Kanal (Log unten).
+4. Build: `HF_SFX_DIR=<hyperframes-Repo>/skills/media-use/audio/assets/sfx python3 $M72/hyperframes/build_hf.py <ep> <proj> dark2|kg <NN> scenes_x.py`.
+   Liegt `words.json` vor, schaltet der Builder automatisch ein:
+   - **Hook-Karte**: Satz 1 groß oben (Dark v2: weiße Box/schwarze Schrift; kg: gelbe Karte), eine Phrase pro Sprechmoment,
+     jede Phrase = Kamerasprung. Frame 0 = erste Phrase + komplettes Motiv, **ohne Blitz** (Titelbild bleibt sauber), Blitz ab Frame 1.
+     Abschalten nur mit `HOOKCARD = False` im Szenenmodul.
+   - **Wort-genaue Untertitel**: Gruppe erscheint auf ihrem ersten Wort, jedes Wort leuchtet beim Sprechen auf (80/82 px).
+     Der Hook-Satz steht nur in der Karte, nicht doppelt als Untertitel.
+   - **Szenen-Einstieg auf Bewegung**: jede Szene landet leicht groß + weich (0,34 s) statt hartem Schnitt (`ENTER = False` schaltet ab).
+   - Fortschrittsbalken, Partikel/Licht-Sweep, Stempel bleiben wie gehabt.
+5. `HF=<cli> bash $M72/hyperframes/finish.sh <proj>`: lint → check → render → **Lautheit in zwei Durchgängen**
+   (−14 LUFS, Spitze ≤ −1,5 dBTP, Limiter dahinter). Danach Snapshots/Frames ansehen (0 s, 0,3 s, 1 s, 2 s + je Szene).
+6. Ins Repo wie bisher (§6.7).
+
+**Skript-Regeln zusätzlich zu §15 (wegen Hook-Karte):**
+- Satz 1 in **2–3 Phrasen mit Satzzeichen** bauen (Punkt, Komma, Fragezeichen): jede Phrase ≤ 16 Zeichen, jede wird ein eigenes
+  großes Bild. Gut: „10.000 Schritte? Das war Werbung.“ Schlecht: ein langer Satz ohne Zeichen.
+- Die erste Phrase muss allein neugierig machen und das Suchwort tragen (sie ist das Titelbild).
+- Hook-Szene im Szenenmodul: Motiv ab Frame 0 komplett, oberer Bereich y 250–470 frei lassen (dort sitzt die Karte).
+- Zahlen in `say` immer ausschreiben (Prüfung schlägt sonst fehl); Doppelpunkt/Gedankenstrich als Sprechpause statt neuer Satz.
+
+**Animation (aus HyperFrames-Motion-Leitfaden, für neue Szenenmodule):**
+- Ease nach Rolle: Ankommen `expo.out`/`power4.out` (langer Auslauf), Kamera `power2.inOut`, Abgang `power3.in` und halb so lang.
+  Nicht überall `back.out`-Ploppen. Helfer in `motion.py`: `land`, `leave`, `slam` (nur für die Kernzahl), `stagger`, `draw`, `shake`.
+- Überlappen: nächstes Element startet, wenn das vorige 30–50 % fertig ist. Listen 40–80 ms versetzt.
+- Text, der gelandet ist, steht still; Bewegung geht auf Motiv/Kamera über. Schweben/Pulsieren nur am Motiv, nie am Text.
+- Beats an die Stimme hängen: `motion.at_word(words, zeile, "wort")` liefert die Sprechzeit eines Worts.
+- Zahl hochzählen 1,2–1,6 s, dann halten. Ein Übergangstyp pro Naht mit Ursache im Bild, nicht überall derselbe.
+- Bei mehreren `fromTo` auf dasselbe Element: alle außer dem ersten mit `immediateRender: false` (sonst falscher Frame 0).
+
+**Vorher/Nachher (Testrender 2026-11-11, gleiche Skripte, nicht zum Posten):**
+| | Vorher | Nachher |
+|---|---|---|
+| Frame 0 | Motiv + 1 Wort Untertitel | Motiv + große Hook-Phrase |
+| Bildwechsel bis Sek. 2 | 0–1 | 2–3 (Phrase + Kamerasprung) |
+| Satzschnitte | Pausen-Raten, 2 Fehler bei AI72 #16 | Wort-Erkennung, 0 Fehler |
+| TTS-Requests je Video | 2 | 1 |
+| Untertitel | nach Zeichenzahl | wortgenau, aktives Wort |
+| Spitzenpegel #17 | 0,0 dBFS | −1,2 dBFS (Ziel −1,5 dBTP, AAC hebt leicht) |
+| Musik | A-Moll/C-Dur fest, Einblenden | Tonart/Folge je Video, Schlag bei 0 s, Öffnung zur Auflösung |
+
+**Musik-Log (neueste zuerst):**
+| Kanal | Video | Stil/bpm | Tonart | Folge |
+|---|---|---|---|---|
+| malangenommen72 | #17 (alt) | dark 76 | A | pop |
+| AI72 | #16 (alt) | bright 104 | C | pop |
+
+**Noch offen / ehrlich:** Wirkung auf die Kurve ist nicht gemessen – erst Studio-Daten nach 4–6 Videos zeigen es (§10).
+Ton wurde gemessen, nicht gehört. Alte Szenenmodule nutzen weiter `back.out`-Ploppen; neue Module nach den Regeln oben bauen.
+
