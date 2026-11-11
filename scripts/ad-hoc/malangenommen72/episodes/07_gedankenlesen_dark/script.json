@@ -1,0 +1,9 @@
+[
+ {"say":"Mal angenommen, du könntest ab morgen die Gedanken aller Menschen lesen.","show":"Mal angenommen, du könntest ab morgen die Gedanken aller Menschen lesen.","scene":"hook"},
+ {"say":"Klingt praktisch. Denn ohne Superkraft liegen wir ziemlich oft daneben.","show":"Klingt praktisch. Denn ohne Superkraft liegen wir ziemlich oft daneben.","scene":"easy"},
+ {"say":"In Studien des Psychologen William Ickes errieten Fremde nur rund zwanzig Prozent der Gedanken ihres Gegenübers richtig. Enge Freunde schafften etwa ein Drittel.","show":"In Studien des Psychologen William Ickes errieten Fremde nur rund 20 % der Gedanken ihres Gegenübers richtig. Enge Freunde schafften etwa ein Drittel.","scene":"ickes"},
+ {"say":"Folge mal angenommen zweiundsiebzig für mehr Gedankenexperimente.","show":"Folge @malangenommen72 für mehr Gedankenexperimente.","scene":"follow"},
+ {"say":"Mit Gedankenlesen wüsstest du plötzlich alles. Was dein Chef wirklich von dir hält. Was dein Date gerade denkt. Und was deine Freunde nie sagen würden.","show":"Mit Gedankenlesen wüsstest du plötzlich alles. Was dein Chef wirklich von dir hält. Was dein Date gerade denkt. Und was deine Freunde nie sagen würden.","scene":"reveal"},
+ {"say":"Vielleicht ist es ganz gut, dass Gedanken privat bleiben. Das ist natürlich nur ein Gedankenexperiment.","show":"Vielleicht ist es ganz gut, dass Gedanken privat bleiben. Das ist natürlich nur ein Gedankenexperiment.","scene":"lock"},
+ {"say":"Wessen Gedanken würdest du als Erstes lesen? Schreib's in die Kommentare.","show":"Wessen Gedanken würdest du als Erstes lesen? Schreib's in die Kommentare.","scene":"ask"}
+]

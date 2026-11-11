@@ -1,0 +1,10 @@
+[
+ {"say":"Warum liebst du deinen Bruder, obwohl er dich jahrelang genervt hat?","show":"Warum liebst du deinen Bruder, obwohl er dich jahrelang genervt hat?","scene":"bro","gap":0},
+ {"say":"Kleine Geschwister streiten im Schnitt etwa dreimal pro Stunde. Trotzdem hält kaum eine Bindung so fest.","show":"Kleine Geschwister streiten im Schnitt etwa dreimal pro Stunde. Trotzdem hält kaum eine Bindung so fest.","scene":"fight","gap":0},
+ {"say":"Der Grund: Dein Gehirn erkennt Geschwister an zwei unbewussten Hinweisen.","show":"Der Grund: Dein Gehirn erkennt Geschwister an zwei unbewussten Hinweisen.","scene":"brain2","gap":0},
+ {"say":"Hast du gesehen, wie deine Mutter das Baby versorgt? Und wie lange habt ihr unter einem Dach gelebt?","show":"Hast du gesehen, wie deine Mutter das Baby versorgt? Und wie lange habt ihr unter einem Dach gelebt?","scene":"cues","gap":0},
+ {"say":"Folge mal angenommen zweiundsiebzig, wenn du dich gerade wiedererkennst.","show":"Folge @malangenommen72, wenn du dich gerade wiedererkennst.","scene":"follow","gap":0},
+ {"say":"Je stärker diese Hinweise, desto eher hilfst du ihm. Selbst wenn er nervt.","show":"Je stärker diese Hinweise, desto eher hilfst du ihm. Selbst wenn er nervt.","scene":"help","gap":0},
+ {"say":"Und in einer Langzeitstudie hatten Menschen, die sich mit dreiundzwanzig gut mit ihren Geschwistern verstanden, mit einundvierzig weniger Ängste.","show":"Und in einer Langzeitstudie hatten Menschen, die sich mit 23 gut mit ihren Geschwistern verstanden, mit 41 weniger Ängste.","scene":"study","gap":0},
+ {"say":"Schick das deinem Bruder oder deiner Schwester. Ohne Kommentar.","show":"Schick das deinem Bruder oder deiner Schwester. Ohne Kommentar.","scene":"share","gap":0}
+]

@@ -1,0 +1,37 @@
+[
+ {
+  "say": "Mal angenommen, du willst endlich Sport machen. Motivation bringt dabei: fast nichts.",
+  "show": "Mal angenommen, du willst endlich Sport machen. Motivation bringt dabei: fast nichts.",
+  "scene": "hook"
+ },
+ {
+  "say": "Aber ein Satz verdoppelt deine Chance. Am Ende bekommst du ihn.",
+  "show": "Aber ein Satz verdoppelt deine Chance. Am Ende bekommst du ihn.",
+  "scene": "loop"
+ },
+ {
+  "say": "Zweihundertachtundvierzig Studierende, drei Gruppen: ohne alles, mit Motivationstext, und mit einem Satz: an welchem Tag, um wie viel Uhr und wo sie trainieren.",
+  "show": "248 Studierende, drei Gruppen: ohne alles, mit Motivationstext, und mit einem Satz: an welchem Tag, um wie viel Uhr und wo sie trainieren.",
+  "scene": "groups"
+ },
+ {
+  "say": "Nach einer Woche trainierten: ohne alles achtunddreißig Prozent. Mit Motivation fünfunddreißig. Mit dem Satz: einundneunzig Prozent.",
+  "show": "Nach einer Woche trainierten: ohne alles 38 %. Mit Motivation 35 %. Mit dem Satz: 91 %.",
+  "scene": "bars"
+ },
+ {
+  "say": "Folge mal angenommen zweiundsiebzig für Psychologie, die du sofort nutzen kannst.",
+  "show": "Folge @malangenommen72 für Psychologie, die du sofort nutzen kannst.",
+  "scene": "follow"
+ },
+ {
+  "say": "Der Satz nimmt dir die Entscheidung ab. Kommt der Moment, läuft der Plan fast von allein. Vierundneunzig Studien bestätigen das, meist mit kleinerem Effekt.",
+  "show": "Der Satz nimmt dir die Entscheidung ab. Kommt der Moment, läuft der Plan fast von allein. Vierundneunzig Studien bestätigen das, meist mit kleinerem Effekt.",
+  "scene": "autopilot"
+ },
+ {
+  "say": "Also: Ich mache Sport am Dienstag, um achtzehn Uhr, im Park. Speicher dir das. Und schick es jemandem, der immer sagt: ab Montag.",
+  "show": "Also: Ich mache Sport am Dienstag, um 18 Uhr, im Park. Speicher dir das. Und schick es jemandem, der immer sagt: ab Montag.",
+  "scene": "tip"
+ }
+]

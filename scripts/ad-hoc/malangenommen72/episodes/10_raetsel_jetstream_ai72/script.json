@@ -1,0 +1,37 @@
+[
+ {
+  "say": "Rätsel: Warum ist der Flug von New York nach London oft eine Stunde kürzer als zurück?",
+  "show": "Rätsel: Warum ist der Flug von New York nach London oft eine Stunde kürzer als zurück?",
+  "scene": "hook"
+ },
+ {
+  "say": "Gleiche Strecke, gleiches Flugzeug. Tipp: Die Erddrehung ist es nicht, die Luft dreht sich mit.",
+  "show": "Gleiche Strecke, gleiches Flugzeug. Tipp: Die Erddrehung ist es nicht, die Luft dreht sich mit.",
+  "scene": "clue"
+ },
+ {
+  "say": "Was glaubst du? Schreib deine Antwort in die Kommentare, bevor die Lösung kommt.",
+  "show": "Was glaubst du? Schreib deine Antwort in die Kommentare, bevor die Lösung kommt.",
+  "scene": "think"
+ },
+ {
+  "say": "Folge A I zweiundsiebzig, hier gibt es jedes Mal ein neues Rätsel.",
+  "show": "Folge @ai72, hier gibt es jedes Mal ein neues Rätsel.",
+  "scene": "follow"
+ },
+ {
+  "say": "Die Lösung: der Jetstream. In rund zehn Kilometern Höhe weht ein starker Westwind, im Winter oft mit über zweihundert Kilometern pro Stunde. Nach Osten schiebt er, nach Westen bremst er.",
+  "show": "Die Lösung: der Jetstream. In rund 10 km Höhe weht ein starker Westwind, im Winter oft mit über 200 km/h. Nach Osten schiebt er, nach Westen bremst er.",
+  "scene": "jet"
+ },
+ {
+  "say": "Bonus: Im Februar zwanzigzwanzig schob ein Sturm einen Jumbojet in nur vier Stunden sechsundfünfzig Minuten von New York nach London. Rekord ohne Überschall.",
+  "show": "Bonus: Im Februar 2020 schob ein Sturm einen Jumbojet in nur 4 Std. 56 Min. von New York nach London. Rekord ohne Überschall.",
+  "scene": "record"
+ },
+ {
+  "say": "Speicher dir das für die nächste Quizrunde. Und schick das Rätsel jemandem, der gern fliegt.",
+  "show": "Speicher dir das für die nächste Quizrunde. Und schick das Rätsel jemandem, der gern fliegt.",
+  "scene": "share"
+ }
+]

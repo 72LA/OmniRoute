@@ -1,0 +1,10 @@
+[
+ {"say":"Rätsel: Warum sind Gullydeckel eigentlich rund?","show":"Rätsel: Warum sind Gullydeckel eigentlich rund?","scene":"hook"},
+ {"say":"Viereckig ginge doch genauso. Trotzdem sind die meisten rund.","show":"Viereckig ginge doch genauso. Trotzdem sind die meisten rund.","scene":"square"},
+ {"say":"Überleg kurz. Hast du eine Idee? Schreib sie in die Kommentare, bevor du weiterschaust.","show":"Überleg kurz. Hast du eine Idee? Schreib sie in die Kommentare, bevor du weiterschaust.","scene":"think"},
+ {"say":"Folge A I zweiundsiebzig, hier gibt es jedes Mal ein neues Rätsel.","show":"Folge @ai72, hier gibt es jedes Mal ein neues Rätsel.","scene":"follow"},
+ {"say":"Die Lösung: Ein runder Deckel kann nicht in sein eigenes Loch fallen. Egal wie du ihn drehst, er ist überall gleich breit.","show":"Die Lösung: Ein runder Deckel kann nicht in sein eigenes Loch fallen. Egal wie du ihn drehst, er ist überall gleich breit.","scene":"solution"},
+ {"say":"Ein quadratischer Deckel dagegen passt schräg gedreht durch die Öffnung und würde in die Tiefe stürzen.","show":"Ein quadratischer Deckel dagegen passt schräg gedreht durch die Öffnung und würde in die Tiefe stürzen.","scene":"fall"},
+ {"say":"Und als Bonus: Runde Deckel kann man rollen statt tragen, und man muss sie beim Zurücklegen nicht ausrichten.","show":"Und als Bonus: Runde Deckel kann man rollen statt tragen, und man muss sie beim Zurücklegen nicht ausrichten.","scene":"bonus"},
+ {"say":"Hattest du es richtig? Schick das Rätsel jemandem, der es nicht lösen kann.","show":"Hattest du es richtig? Schick das Rätsel jemandem, der es nicht lösen kann.","scene":"share"}
+]

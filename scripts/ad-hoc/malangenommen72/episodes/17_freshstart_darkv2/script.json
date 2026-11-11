@@ -1,0 +1,37 @@
+[
+ {
+  "say": "Montag, sechs Uhr. Du startest neu. Schon wieder.",
+  "show": "Montag, 6 Uhr. Du startest neu. Schon wieder.",
+  "scene": "hook"
+ },
+ {
+  "say": "Das ist kein Selbstbetrug.",
+  "show": "Das ist kein Selbstbetrug.",
+  "scene": "twist"
+ },
+ {
+  "say": "Forscher werteten Gym-Besuche, Diät-Suchen und Ziele aus.",
+  "show": "Forscher werteten Gym-Besuche, Diät-Suchen und Ziele aus.",
+  "scene": "data"
+ },
+ {
+  "say": "Nach jedem Neuanfang stiegen alle drei. Neue Woche, neuer Monat, sogar nach dem Geburtstag.",
+  "show": "Nach jedem Neuanfang stiegen alle drei. Neue Woche, neuer Monat, sogar nach dem Geburtstag.",
+  "scene": "spikes"
+ },
+ {
+  "say": "Vermutung: Ein Neustart fühlt sich an wie ein neues Ich.",
+  "show": "Vermutung: Ein Neustart fühlt sich an wie ein neues Ich.",
+  "scene": "self"
+ },
+ {
+  "say": "Also: Häng deinen Plan an so einen Tag. Nicht an irgendwann.",
+  "show": "Also: Häng deinen Plan an so einen Tag. Nicht an irgendwann.",
+  "scene": "trick"
+ },
+ {
+  "say": "Montag ist kein Witz. Oder wartest du lieber auf Neujahr?",
+  "show": "Montag ist kein Witz. Oder wartest du lieber auf Neujahr?",
+  "scene": "end"
+ }
+]

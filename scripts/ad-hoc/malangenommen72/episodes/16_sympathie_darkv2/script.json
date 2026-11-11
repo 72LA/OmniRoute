@@ -1,0 +1,7 @@
+[
+ {"say":"Warum denkst du nach Gesprächen, dass sie dich nicht mochten?","show":"Warum denkst du nach Gesprächen, dass sie dich nicht mochten?","scene":"hook"},
+ {"say":"Weil dein Kopf da fast immer falsch liegt.","show":"Weil dein Kopf da fast immer falsch liegt.","scene":"twist"},
+ {"say":"In fünf Studien mochten Gesprächspartner einander mehr, als sie glaubten. Sogar Mitbewohner, monatelang.","show":"In 5 Studien mochten Gesprächspartner einander mehr, als sie glaubten. Sogar Mitbewohner, monatelang.","scene":"gap"},
+ {"say":"Forscher nennen das die Sympathie-Lücke.","show":"Forscher nennen das die Sympathie-Lücke.","scene":"name"},
+ {"say":"Also: Nach dem nächsten Treffen nicht grübeln. Und schick das dem, der nach jedem Gespräch alles zerdenkt.","show":"Also: Nach dem nächsten Treffen nicht grübeln. Und schick das dem, der nach jedem Gespräch alles zerdenkt.","scene":"tip"}
+]
